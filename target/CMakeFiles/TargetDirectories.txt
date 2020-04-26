@@ -1,0 +1,11 @@
+/home/student/Lekcja1/target/CMakeFiles/rebuild_cache.dir
+/home/student/Lekcja1/target/CMakeFiles/test.dir
+/home/student/Lekcja1/target/CMakeFiles/edit_cache.dir
+/home/student/Lekcja1/target/program/CMakeFiles/rebuild_cache.dir
+/home/student/Lekcja1/target/program/CMakeFiles/edit_cache.dir
+/home/student/Lekcja1/target/program/CMakeFiles/Program.dir
+/home/student/Lekcja1/target/program/CMakeFiles/test.dir
+/home/student/Lekcja1/target/biblioteka/CMakeFiles/rebuild_cache.dir
+/home/student/Lekcja1/target/biblioteka/CMakeFiles/edit_cache.dir
+/home/student/Lekcja1/target/biblioteka/CMakeFiles/Biblioteka.dir
+/home/student/Lekcja1/target/biblioteka/CMakeFiles/test.dir

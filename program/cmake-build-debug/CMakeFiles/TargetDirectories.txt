@@ -1,0 +1,3 @@
+/home/student/Lekcja1/program/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/student/Lekcja1/program/cmake-build-debug/CMakeFiles/Program.dir
+/home/student/Lekcja1/program/cmake-build-debug/CMakeFiles/edit_cache.dir

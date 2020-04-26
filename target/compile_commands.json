@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/student/Lekcja1/target/program",
+  "command": "/usr/bin/g++   -I/home/student/Lekcja1/program/include -I/home/student/Lekcja1/biblioteka/include  -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Program.dir/src/main.cpp.o -c /home/student/Lekcja1/program/src/main.cpp",
+  "file": "/home/student/Lekcja1/program/src/main.cpp"
+},
+{
+  "directory": "/home/student/Lekcja1/target/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Lekcja1/biblioteka/include  -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/Student.cpp.o -c /home/student/Lekcja1/biblioteka/src/Student.cpp",
+  "file": "/home/student/Lekcja1/biblioteka/src/Student.cpp"
+},
+{
+  "directory": "/home/student/Lekcja1/target/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Lekcja1/biblioteka/include  -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/Client.cpp.o -c /home/student/Lekcja1/biblioteka/src/model/Client.cpp",
+  "file": "/home/student/Lekcja1/biblioteka/src/model/Client.cpp"
+}
+]

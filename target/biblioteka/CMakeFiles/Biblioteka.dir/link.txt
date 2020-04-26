@@ -1,0 +1,2 @@
+/usr/bin/ar qc libBiblioteka.a  CMakeFiles/Biblioteka.dir/src/Student.cpp.o CMakeFiles/Biblioteka.dir/src/model/Client.cpp.o
+/usr/bin/ranlib libBiblioteka.a

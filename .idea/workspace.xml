@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="POBIProject" targetName="Program" />
+      <config projectName="POBIProject" targetName="Biblioteka" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Default" GENERATION_DIR="$PROJECT_DIR$/target" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fcbd31f5-b62a-4407-909f-132749c17634" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Default" />
+  <component name="ProjectId" id="1ao0ePzIaI6qGKLxSgzTOhM3wuU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/program/src" />
+      <recent name="$PROJECT_DIR$/target/biblioteka" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.Program">
+    <configuration name="Biblioteka" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="POBIProject" TARGET_NAME="Biblioteka" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Program" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="POBIProject" TARGET_NAME="Program" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="POBIProject" RUN_TARGET_NAME="Program">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.Biblioteka" />
+      <item itemvalue="CMake Application.Program" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fcbd31f5-b62a-4407-909f-132749c17634" name="Default Changelist" comment="" />
+      <created>1587386733940</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587386733940</updated>
+      <workItem from="1587386737557" duration="6000" />
+      <workItem from="1587386965972" duration="2000" />
+      <workItem from="1587387007924" duration="1150000" />
+      <workItem from="1587388162396" duration="2529000" />
+      <workItem from="1587761484359" duration="4000" />
+      <workItem from="1587761507343" duration="1621000" />
+      <workItem from="1587763314776" duration="84000" />
+      <workItem from="1587763534371" duration="618000" />
+      <workItem from="1587766756719" duration="656000" />
+      <workItem from="1587811191387" duration="2316000" />
+      <workItem from="1587826029316" duration="27000" />
+      <workItem from="1587846777680" duration="598000" />
+      <workItem from="1587857148168" duration="22000" />
+      <workItem from="1587857212765" duration="208000" />
+      <workItem from="1587857533472" duration="2565000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="634" y="178" width="647" height="552" key="#Biblioteka" timestamp="1587858828492">
+      <screen x="0" y="0" width="1920" height="910" />
+    </state>
+    <state x="634" y="178" width="647" height="552" key="#Biblioteka/0.0.1920.910@0.0.1920.910" timestamp="1587858828492" />
+    <state x="656" y="301" width="599" height="389" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587857243524">
+      <screen x="0" y="0" width="1920" height="910" />
+    </state>
+    <state x="656" y="301" width="599" height="389" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.910@0.0.1920.910" timestamp="1587857243524" />
+    <state x="741" y="212" width="430" height="482" key="FileChooserDialogImpl" timestamp="1587857216906">
+      <screen x="0" y="0" width="1920" height="910" />
+    </state>
+    <state x="741" y="212" width="430" height="482" key="FileChooserDialogImpl/0.0.1920.910@0.0.1920.910" timestamp="1587857216906" />
+    <state width="1874" height="233" key="GridCell.Tab.0.bottom" timestamp="1587860104829">
+      <screen x="0" y="0" width="1920" height="910" />
+    </state>
+    <state width="1874" height="233" key="GridCell.Tab.0.bottom/0.0.1920.910@0.0.1920.910" timestamp="1587860104829" />
+    <state width="1874" height="233" key="GridCell.Tab.0.center" timestamp="1587860104829">
+      <screen x="0" y="0" width="1920" height="910" />
+    </state>
+    <state width="1874" height="233" key="GridCell.Tab.0.center/0.0.1920.910@0.0.1920.910" timestamp="1587860104829" />
+    <state width="1874" height="233" key="GridCell.Tab.0.left" timestamp="1587860104829">
+      <screen x="0" y="0" width="1920" height="910" />
+    </state>
+    <state width="1874" height="233" key="GridCell.Tab.0.left/0.0.1920.910@0.0.1920.910" timestamp="1587860104829" />
+    <state width="1874" height="233" key="GridCell.Tab.0.right" timestamp="1587860104829">
+      <screen x="0" y="0" width="1920" height="910" />
+    </state>
+    <state width="1874" height="233" key="GridCell.Tab.0.right/0.0.1920.910@0.0.1920.910" timestamp="1587860104829" />
+    <state width="1864" height="252" key="GridCell.Tab.1.bottom" timestamp="1587393041436">
+      <screen x="0" y="0" width="1920" height="910" />
+    </state>
+    <state width="1864" height="252" key="GridCell.Tab.1.bottom/0.0.1920.910@0.0.1920.910" timestamp="1587393041436" />
+    <state width="1864" height="252" key="GridCell.Tab.1.center" timestamp="1587393041436">
+      <screen x="0" y="0" width="1920" height="910" />
+    </state>
+    <state width="1864" height="252" key="GridCell.Tab.1.center/0.0.1920.910@0.0.1920.910" timestamp="1587393041436" />
+    <state width="1864" height="252" key="GridCell.Tab.1.left" timestamp="1587393041436">
+      <screen x="0" y="0" width="1920" height="910" />
+    </state>
+    <state width="1864" height="252" key="GridCell.Tab.1.left/0.0.1920.910@0.0.1920.910" timestamp="1587393041435" />
+    <state width="1864" height="252" key="GridCell.Tab.1.right" timestamp="1587393041436">
+      <screen x="0" y="0" width="1920" height="910" />
+    </state>
+    <state width="1864" height="252" key="GridCell.Tab.1.right/0.0.1920.910@0.0.1920.910" timestamp="1587393041436" />
+    <state x="526" y="133" key="SettingsEditor" timestamp="1587761670821">
+      <screen x="0" y="0" width="1920" height="910" />
+    </state>
+    <state x="526" y="133" key="SettingsEditor/0.0.1920.910@0.0.1920.910" timestamp="1587761670821" />
+  </component>
+</project>
