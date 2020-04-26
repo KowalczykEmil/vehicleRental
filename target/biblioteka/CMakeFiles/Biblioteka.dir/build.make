@@ -46,10 +46,10 @@ RM = /home/student/clion-2019.3.4/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Lekcja1
+CMAKE_SOURCE_DIR = /home/student/Warsztaty
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Lekcja1/target
+CMAKE_BINARY_DIR = /home/student/Warsztaty/target
 
 # Include any dependencies generated for this target.
 include biblioteka/CMakeFiles/Biblioteka.dir/depend.make
@@ -62,29 +62,29 @@ include biblioteka/CMakeFiles/Biblioteka.dir/flags.make
 
 biblioteka/CMakeFiles/Biblioteka.dir/src/Student.cpp.o: biblioteka/CMakeFiles/Biblioteka.dir/flags.make
 biblioteka/CMakeFiles/Biblioteka.dir/src/Student.cpp.o: ../biblioteka/src/Student.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Lekcja1/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object biblioteka/CMakeFiles/Biblioteka.dir/src/Student.cpp.o"
-	cd /home/student/Lekcja1/target/biblioteka && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Biblioteka.dir/src/Student.cpp.o -c /home/student/Lekcja1/biblioteka/src/Student.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Warsztaty/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object biblioteka/CMakeFiles/Biblioteka.dir/src/Student.cpp.o"
+	cd /home/student/Warsztaty/target/biblioteka && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Biblioteka.dir/src/Student.cpp.o -c /home/student/Warsztaty/biblioteka/src/Student.cpp
 
 biblioteka/CMakeFiles/Biblioteka.dir/src/Student.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biblioteka.dir/src/Student.cpp.i"
-	cd /home/student/Lekcja1/target/biblioteka && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Lekcja1/biblioteka/src/Student.cpp > CMakeFiles/Biblioteka.dir/src/Student.cpp.i
+	cd /home/student/Warsztaty/target/biblioteka && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Warsztaty/biblioteka/src/Student.cpp > CMakeFiles/Biblioteka.dir/src/Student.cpp.i
 
 biblioteka/CMakeFiles/Biblioteka.dir/src/Student.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biblioteka.dir/src/Student.cpp.s"
-	cd /home/student/Lekcja1/target/biblioteka && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Lekcja1/biblioteka/src/Student.cpp -o CMakeFiles/Biblioteka.dir/src/Student.cpp.s
+	cd /home/student/Warsztaty/target/biblioteka && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Warsztaty/biblioteka/src/Student.cpp -o CMakeFiles/Biblioteka.dir/src/Student.cpp.s
 
 biblioteka/CMakeFiles/Biblioteka.dir/src/model/Client.cpp.o: biblioteka/CMakeFiles/Biblioteka.dir/flags.make
 biblioteka/CMakeFiles/Biblioteka.dir/src/model/Client.cpp.o: ../biblioteka/src/model/Client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Lekcja1/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object biblioteka/CMakeFiles/Biblioteka.dir/src/model/Client.cpp.o"
-	cd /home/student/Lekcja1/target/biblioteka && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Biblioteka.dir/src/model/Client.cpp.o -c /home/student/Lekcja1/biblioteka/src/model/Client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Warsztaty/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object biblioteka/CMakeFiles/Biblioteka.dir/src/model/Client.cpp.o"
+	cd /home/student/Warsztaty/target/biblioteka && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Biblioteka.dir/src/model/Client.cpp.o -c /home/student/Warsztaty/biblioteka/src/model/Client.cpp
 
 biblioteka/CMakeFiles/Biblioteka.dir/src/model/Client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Biblioteka.dir/src/model/Client.cpp.i"
-	cd /home/student/Lekcja1/target/biblioteka && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Lekcja1/biblioteka/src/model/Client.cpp > CMakeFiles/Biblioteka.dir/src/model/Client.cpp.i
+	cd /home/student/Warsztaty/target/biblioteka && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Warsztaty/biblioteka/src/model/Client.cpp > CMakeFiles/Biblioteka.dir/src/model/Client.cpp.i
 
 biblioteka/CMakeFiles/Biblioteka.dir/src/model/Client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Biblioteka.dir/src/model/Client.cpp.s"
-	cd /home/student/Lekcja1/target/biblioteka && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Lekcja1/biblioteka/src/model/Client.cpp -o CMakeFiles/Biblioteka.dir/src/model/Client.cpp.s
+	cd /home/student/Warsztaty/target/biblioteka && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Warsztaty/biblioteka/src/model/Client.cpp -o CMakeFiles/Biblioteka.dir/src/model/Client.cpp.s
 
 # Object files for target Biblioteka
 Biblioteka_OBJECTS = \
@@ -98,9 +98,9 @@ biblioteka/libBiblioteka.a: biblioteka/CMakeFiles/Biblioteka.dir/src/Student.cpp
 biblioteka/libBiblioteka.a: biblioteka/CMakeFiles/Biblioteka.dir/src/model/Client.cpp.o
 biblioteka/libBiblioteka.a: biblioteka/CMakeFiles/Biblioteka.dir/build.make
 biblioteka/libBiblioteka.a: biblioteka/CMakeFiles/Biblioteka.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Lekcja1/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libBiblioteka.a"
-	cd /home/student/Lekcja1/target/biblioteka && $(CMAKE_COMMAND) -P CMakeFiles/Biblioteka.dir/cmake_clean_target.cmake
-	cd /home/student/Lekcja1/target/biblioteka && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Biblioteka.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Warsztaty/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libBiblioteka.a"
+	cd /home/student/Warsztaty/target/biblioteka && $(CMAKE_COMMAND) -P CMakeFiles/Biblioteka.dir/cmake_clean_target.cmake
+	cd /home/student/Warsztaty/target/biblioteka && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Biblioteka.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 biblioteka/CMakeFiles/Biblioteka.dir/build: biblioteka/libBiblioteka.a
@@ -108,10 +108,10 @@ biblioteka/CMakeFiles/Biblioteka.dir/build: biblioteka/libBiblioteka.a
 .PHONY : biblioteka/CMakeFiles/Biblioteka.dir/build
 
 biblioteka/CMakeFiles/Biblioteka.dir/clean:
-	cd /home/student/Lekcja1/target/biblioteka && $(CMAKE_COMMAND) -P CMakeFiles/Biblioteka.dir/cmake_clean.cmake
+	cd /home/student/Warsztaty/target/biblioteka && $(CMAKE_COMMAND) -P CMakeFiles/Biblioteka.dir/cmake_clean.cmake
 .PHONY : biblioteka/CMakeFiles/Biblioteka.dir/clean
 
 biblioteka/CMakeFiles/Biblioteka.dir/depend:
-	cd /home/student/Lekcja1/target && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Lekcja1 /home/student/Lekcja1/biblioteka /home/student/Lekcja1/target /home/student/Lekcja1/target/biblioteka /home/student/Lekcja1/target/biblioteka/CMakeFiles/Biblioteka.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Warsztaty/target && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Warsztaty /home/student/Warsztaty/biblioteka /home/student/Warsztaty/target /home/student/Warsztaty/target/biblioteka /home/student/Warsztaty/target/biblioteka/CMakeFiles/Biblioteka.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : biblioteka/CMakeFiles/Biblioteka.dir/depend
 

@@ -51,10 +51,10 @@ RM = /home/student/clion-2019.3.4/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Lekcja1
+CMAKE_SOURCE_DIR = /home/student/Warsztaty
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Lekcja1/target
+CMAKE_BINARY_DIR = /home/student/Warsztaty/target
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -94,14 +94,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/student/Lekcja1/target && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Lekcja1/target/CMakeFiles /home/student/Lekcja1/target/biblioteka/CMakeFiles/progress.marks
-	cd /home/student/Lekcja1/target && $(MAKE) -f CMakeFiles/Makefile2 biblioteka/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Lekcja1/target/CMakeFiles 0
+	cd /home/student/Warsztaty/target && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Warsztaty/target/CMakeFiles /home/student/Warsztaty/target/biblioteka/CMakeFiles/progress.marks
+	cd /home/student/Warsztaty/target && $(MAKE) -f CMakeFiles/Makefile2 biblioteka/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Warsztaty/target/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/student/Lekcja1/target && $(MAKE) -f CMakeFiles/Makefile2 biblioteka/clean
+	cd /home/student/Warsztaty/target && $(MAKE) -f CMakeFiles/Makefile2 biblioteka/clean
 .PHONY : clean
 
 # The main clean target
@@ -111,22 +111,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/student/Lekcja1/target && $(MAKE) -f CMakeFiles/Makefile2 biblioteka/preinstall
+	cd /home/student/Warsztaty/target && $(MAKE) -f CMakeFiles/Makefile2 biblioteka/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/student/Lekcja1/target && $(MAKE) -f CMakeFiles/Makefile2 biblioteka/preinstall
+	cd /home/student/Warsztaty/target && $(MAKE) -f CMakeFiles/Makefile2 biblioteka/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/student/Lekcja1/target && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/student/Warsztaty/target && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 biblioteka/CMakeFiles/Biblioteka.dir/rule:
-	cd /home/student/Lekcja1/target && $(MAKE) -f CMakeFiles/Makefile2 biblioteka/CMakeFiles/Biblioteka.dir/rule
+	cd /home/student/Warsztaty/target && $(MAKE) -f CMakeFiles/Makefile2 biblioteka/CMakeFiles/Biblioteka.dir/rule
 .PHONY : biblioteka/CMakeFiles/Biblioteka.dir/rule
 
 # Convenience name for target.
@@ -136,7 +136,7 @@ Biblioteka: biblioteka/CMakeFiles/Biblioteka.dir/rule
 
 # fast build rule for target.
 Biblioteka/fast:
-	cd /home/student/Lekcja1/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/build
+	cd /home/student/Warsztaty/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/build
 .PHONY : Biblioteka/fast
 
 src/Student.o: src/Student.cpp.o
@@ -145,7 +145,7 @@ src/Student.o: src/Student.cpp.o
 
 # target to build an object file
 src/Student.cpp.o:
-	cd /home/student/Lekcja1/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/src/Student.cpp.o
+	cd /home/student/Warsztaty/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/src/Student.cpp.o
 .PHONY : src/Student.cpp.o
 
 src/Student.i: src/Student.cpp.i
@@ -154,7 +154,7 @@ src/Student.i: src/Student.cpp.i
 
 # target to preprocess a source file
 src/Student.cpp.i:
-	cd /home/student/Lekcja1/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/src/Student.cpp.i
+	cd /home/student/Warsztaty/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/src/Student.cpp.i
 .PHONY : src/Student.cpp.i
 
 src/Student.s: src/Student.cpp.s
@@ -163,7 +163,7 @@ src/Student.s: src/Student.cpp.s
 
 # target to generate assembly for a file
 src/Student.cpp.s:
-	cd /home/student/Lekcja1/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/src/Student.cpp.s
+	cd /home/student/Warsztaty/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/src/Student.cpp.s
 .PHONY : src/Student.cpp.s
 
 src/model/Client.o: src/model/Client.cpp.o
@@ -172,7 +172,7 @@ src/model/Client.o: src/model/Client.cpp.o
 
 # target to build an object file
 src/model/Client.cpp.o:
-	cd /home/student/Lekcja1/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/src/model/Client.cpp.o
+	cd /home/student/Warsztaty/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/src/model/Client.cpp.o
 .PHONY : src/model/Client.cpp.o
 
 src/model/Client.i: src/model/Client.cpp.i
@@ -181,7 +181,7 @@ src/model/Client.i: src/model/Client.cpp.i
 
 # target to preprocess a source file
 src/model/Client.cpp.i:
-	cd /home/student/Lekcja1/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/src/model/Client.cpp.i
+	cd /home/student/Warsztaty/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/src/model/Client.cpp.i
 .PHONY : src/model/Client.cpp.i
 
 src/model/Client.s: src/model/Client.cpp.s
@@ -190,7 +190,7 @@ src/model/Client.s: src/model/Client.cpp.s
 
 # target to generate assembly for a file
 src/model/Client.cpp.s:
-	cd /home/student/Lekcja1/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/src/model/Client.cpp.s
+	cd /home/student/Warsztaty/target && $(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/src/model/Client.cpp.s
 .PHONY : src/model/Client.cpp.s
 
 # Help Target
@@ -220,6 +220,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/student/Lekcja1/target && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/student/Warsztaty/target && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

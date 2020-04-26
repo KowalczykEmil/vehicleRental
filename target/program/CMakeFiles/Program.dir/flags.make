@@ -6,5 +6,5 @@ CXX_FLAGS = -g3 -gdwarf-4   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/student/Lekcja1/program/include -I/home/student/Lekcja1/biblioteka/include 
+CXX_INCLUDES = -I/home/student/Warsztaty/program/include -I/home/student/Warsztaty/biblioteka/include 
 

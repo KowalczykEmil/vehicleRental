@@ -1,4 +1,4 @@
-# Install script for directory: /home/student/Lekcja1/biblioteka
+# Install script for directory: /home/student/Warsztaty/biblioteka
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

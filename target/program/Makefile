@@ -51,10 +51,10 @@ RM = /home/student/clion-2019.3.4/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Lekcja1
+CMAKE_SOURCE_DIR = /home/student/Warsztaty
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Lekcja1/target
+CMAKE_BINARY_DIR = /home/student/Warsztaty/target
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -94,14 +94,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/student/Lekcja1/target && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Lekcja1/target/CMakeFiles /home/student/Lekcja1/target/program/CMakeFiles/progress.marks
-	cd /home/student/Lekcja1/target && $(MAKE) -f CMakeFiles/Makefile2 program/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Lekcja1/target/CMakeFiles 0
+	cd /home/student/Warsztaty/target && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Warsztaty/target/CMakeFiles /home/student/Warsztaty/target/program/CMakeFiles/progress.marks
+	cd /home/student/Warsztaty/target && $(MAKE) -f CMakeFiles/Makefile2 program/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Warsztaty/target/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/student/Lekcja1/target && $(MAKE) -f CMakeFiles/Makefile2 program/clean
+	cd /home/student/Warsztaty/target && $(MAKE) -f CMakeFiles/Makefile2 program/clean
 .PHONY : clean
 
 # The main clean target
@@ -111,22 +111,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/student/Lekcja1/target && $(MAKE) -f CMakeFiles/Makefile2 program/preinstall
+	cd /home/student/Warsztaty/target && $(MAKE) -f CMakeFiles/Makefile2 program/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/student/Lekcja1/target && $(MAKE) -f CMakeFiles/Makefile2 program/preinstall
+	cd /home/student/Warsztaty/target && $(MAKE) -f CMakeFiles/Makefile2 program/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/student/Lekcja1/target && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/student/Warsztaty/target && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 program/CMakeFiles/Program.dir/rule:
-	cd /home/student/Lekcja1/target && $(MAKE) -f CMakeFiles/Makefile2 program/CMakeFiles/Program.dir/rule
+	cd /home/student/Warsztaty/target && $(MAKE) -f CMakeFiles/Makefile2 program/CMakeFiles/Program.dir/rule
 .PHONY : program/CMakeFiles/Program.dir/rule
 
 # Convenience name for target.
@@ -136,7 +136,7 @@ Program: program/CMakeFiles/Program.dir/rule
 
 # fast build rule for target.
 Program/fast:
-	cd /home/student/Lekcja1/target && $(MAKE) -f program/CMakeFiles/Program.dir/build.make program/CMakeFiles/Program.dir/build
+	cd /home/student/Warsztaty/target && $(MAKE) -f program/CMakeFiles/Program.dir/build.make program/CMakeFiles/Program.dir/build
 .PHONY : Program/fast
 
 src/main.o: src/main.cpp.o
@@ -145,7 +145,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /home/student/Lekcja1/target && $(MAKE) -f program/CMakeFiles/Program.dir/build.make program/CMakeFiles/Program.dir/src/main.cpp.o
+	cd /home/student/Warsztaty/target && $(MAKE) -f program/CMakeFiles/Program.dir/build.make program/CMakeFiles/Program.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -154,7 +154,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /home/student/Lekcja1/target && $(MAKE) -f program/CMakeFiles/Program.dir/build.make program/CMakeFiles/Program.dir/src/main.cpp.i
+	cd /home/student/Warsztaty/target && $(MAKE) -f program/CMakeFiles/Program.dir/build.make program/CMakeFiles/Program.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -163,7 +163,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /home/student/Lekcja1/target && $(MAKE) -f program/CMakeFiles/Program.dir/build.make program/CMakeFiles/Program.dir/src/main.cpp.s
+	cd /home/student/Warsztaty/target && $(MAKE) -f program/CMakeFiles/Program.dir/build.make program/CMakeFiles/Program.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -190,6 +190,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/student/Lekcja1/target && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/student/Warsztaty/target && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
