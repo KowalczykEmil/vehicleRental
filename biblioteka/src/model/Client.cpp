@@ -22,3 +22,15 @@ Client::~Client() {
 std::string Client::clientinfo() {
     return firstName + " "+lastName + " "+ personalID;
 }
+
+void Client::setLastName(std::string lastName) {
+    this->lastName = std::move(lastName);
+}
+
+void Client::setFirstName(std::string firstName) {
+    this->firstName = std::move(firstName);
+}
+
+void Client::setPersonalId(std::string personalID) {
+    this->personalID = std::move(personalID);
+}
