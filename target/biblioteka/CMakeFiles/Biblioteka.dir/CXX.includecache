@@ -6,20 +6,10 @@
 
 #IncludeRegexTransform: 
 
-../biblioteka/include/Student.hpp
-string
--
-
 ../biblioteka/include/model/Client.hpp
 iostream
 -
 string
--
-
-/home/student/Warsztaty/biblioteka/src/Student.cpp
-Student.hpp
-/home/student/Warsztaty/biblioteka/src/Student.hpp
-iostream
 -
 
 /home/student/Warsztaty/biblioteka/src/model/Client.cpp
