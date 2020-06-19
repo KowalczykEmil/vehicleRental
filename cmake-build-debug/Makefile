@@ -51,10 +51,10 @@ RM = /home/student/clion-2019.3.4/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Lekcja1
+CMAKE_SOURCE_DIR = /home/student/Nowe/pobiz_mkwa_ni_08
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Lekcja1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -94,9 +94,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Lekcja1/cmake-build-debug/CMakeFiles /home/student/Lekcja1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles /home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Lekcja1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -125,6 +125,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named check
+
+# Build rule for target.
+check: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check
+.PHONY : check
+
+# fast build rule for target.
+check/fast:
+	$(MAKE) -f biblioteka/CMakeFiles/check.dir/build.make biblioteka/CMakeFiles/check.dir/build
+.PHONY : check/fast
+
+#=============================================================================
+# Target rules for targets named Biblioteka
+
+# Build rule for target.
+Biblioteka: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Biblioteka
+.PHONY : Biblioteka
+
+# fast build rule for target.
+Biblioteka/fast:
+	$(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/build
+.PHONY : Biblioteka/fast
+
+#=============================================================================
+# Target rules for targets named TestBibl
+
+# Build rule for target.
+TestBibl: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestBibl
+.PHONY : TestBibl
+
+# fast build rule for target.
+TestBibl/fast:
+	$(MAKE) -f biblioteka/CMakeFiles/TestBibl.dir/build.make biblioteka/CMakeFiles/TestBibl.dir/build
+.PHONY : TestBibl/fast
+
+#=============================================================================
 # Target rules for targets named Program
 
 # Build rule for target.
@@ -146,6 +185,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... edit_cache"
+	@echo "... check"
+	@echo "... Biblioteka"
+	@echo "... TestBibl"
 	@echo "... Program"
 .PHONY : help
 

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../biblioteka/CMakeLists.txt"
   "CMakeFiles/3.15.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.15.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.15.3/CMakeSystem.cmake"
@@ -27,6 +28,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/student/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Compiler/GNU-C.cmake"
   "/home/student/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Compiler/GNU-CXX.cmake"
   "/home/student/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Compiler/GNU.cmake"
+  "/home/student/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/FindBoost.cmake"
+  "/home/student/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/FindPackageHandleStandardArgs.cmake"
+  "/home/student/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/FindPackageMessage.cmake"
   "/home/student/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/home/student/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Platform/Linux-GNU-C.cmake"
   "/home/student/clion-2019.3.4/bin/cmake/linux/share/cmake-3.15/Modules/Platform/Linux-GNU-CXX.cmake"
@@ -45,10 +49,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "biblioteka/CMakeFiles/CMakeDirectoryInformation.cmake"
   "program/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "biblioteka/CMakeFiles/check.dir/DependInfo.cmake"
+  "biblioteka/CMakeFiles/Biblioteka.dir/DependInfo.cmake"
+  "biblioteka/CMakeFiles/TestBibl.dir/DependInfo.cmake"
   "program/CMakeFiles/Program.dir/DependInfo.cmake"
   )

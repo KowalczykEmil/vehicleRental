@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/student/Lekcja1/program/src/main.cpp
+../biblioteka/include/model/client.h
+string
+-
 iostream
 -
+
+/home/student/Nowe/pobiz_mkwa_ni_08/program/src/main.cpp
+iostream
+-
+model/client.h
+/home/student/Nowe/pobiz_mkwa_ni_08/program/src/model/client.h
 

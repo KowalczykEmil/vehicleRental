@@ -17,17 +17,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)#Określony wyżej standard C++ jest wymagany
 set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_C_FLAGS_DEBUG "-g3 -gdwarf-4")
 set(CMAKE_CXX_FLAGS_DEBUG "-g3 -gdwarf-4")
-
+set(CMAKE_CXX_FLAGS "-Wall -Wpedantic -Wextra -Weffc++")
 #Ustaw nazwę projektu i język na C++
 project(POBIProject)
 enable_language(CXX)
-
-#W specjalnym pliku compile_commands.json można podejrzeć wszystkie operacje kompilatora wraz z parametrami, 
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON) 
-set(CMAKE_VERBOSE_MAKEFILE TRUE) 
+#W specjalnym pliku compile_commands.json można podejrzeć wszystkie operacje kompilatora wraz z parametrami,
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_VERBOSE_MAKEFILE TRUE)
 #uwzględnij podprojek znajdujący się w podkatalogu program. Musi być w nim pliki CMakeLists.txt
-add_subdirectory(program)
 add_subdirectory(biblioteka)
-
+add_subdirectory(program)
 #Włączenie testów powoduje pojawienie się celu test w makefiles
 enable_testing()
