@@ -5,24 +5,24 @@
 #include "model/vehicle.h"
 
 
-Vehicle::Vehicle(float cena, string nrRejestracja)
+Vehicle::Vehicle(float cena, string nrRejestracja): price(cena), registrationNumber(nrRejestracja)
 {
-    price = cena;
-    registrationNumber = nrRejestracja;
 }
 
 Vehicle::~Vehicle()
 {
 }
 
-string Vehicle::vehicleInfo()
+void Vehicle::vehicleInfo()
 {
-    string info;
-    info = registrationNumber;
-    return info;
+    cout << "Registration number :"<<registrationNumber<<". Price: "<< price <<endl;
 }
 
 float Vehicle::getPrice()
 {
     return price;
+}
+string Vehicle::getRegistrationNumber()
+{
+    return registrationNumber;
 }
