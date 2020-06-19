@@ -128,12 +128,12 @@ biblioteka/CMakeFiles/check.dir/clean:
 biblioteka/CMakeFiles/Biblioteka.dir/all:
 	$(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/depend
 	$(MAKE) -f biblioteka/CMakeFiles/Biblioteka.dir/build.make biblioteka/CMakeFiles/Biblioteka.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Biblioteka"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target Biblioteka"
 .PHONY : biblioteka/CMakeFiles/Biblioteka.dir/all
 
 # Build rule for subdir invocation for target.
 biblioteka/CMakeFiles/Biblioteka.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 biblioteka/CMakeFiles/Biblioteka.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles 0
 .PHONY : biblioteka/CMakeFiles/Biblioteka.dir/rule
@@ -155,12 +155,12 @@ biblioteka/CMakeFiles/Biblioteka.dir/clean:
 biblioteka/CMakeFiles/TestBibl.dir/all: biblioteka/CMakeFiles/Biblioteka.dir/all
 	$(MAKE) -f biblioteka/CMakeFiles/TestBibl.dir/build.make biblioteka/CMakeFiles/TestBibl.dir/depend
 	$(MAKE) -f biblioteka/CMakeFiles/TestBibl.dir/build.make biblioteka/CMakeFiles/TestBibl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles --progress-num=5,6,7 "Built target TestBibl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles --progress-num=8,9,10,11 "Built target TestBibl"
 .PHONY : biblioteka/CMakeFiles/TestBibl.dir/all
 
 # Build rule for subdir invocation for target.
 biblioteka/CMakeFiles/TestBibl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 biblioteka/CMakeFiles/TestBibl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles 0
 .PHONY : biblioteka/CMakeFiles/TestBibl.dir/rule
@@ -200,12 +200,12 @@ program/preinstall:
 program/CMakeFiles/Program.dir/all: biblioteka/CMakeFiles/Biblioteka.dir/all
 	$(MAKE) -f program/CMakeFiles/Program.dir/build.make program/CMakeFiles/Program.dir/depend
 	$(MAKE) -f program/CMakeFiles/Program.dir/build.make program/CMakeFiles/Program.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target Program"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target Program"
 .PHONY : program/CMakeFiles/Program.dir/all
 
 # Build rule for subdir invocation for target.
 program/CMakeFiles/Program.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 program/CMakeFiles/Program.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/CMakeFiles 0
 .PHONY : program/CMakeFiles/Program.dir/rule

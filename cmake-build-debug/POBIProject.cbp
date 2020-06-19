@@ -204,10 +204,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/address.cpp">
+			<Option target="Biblioteka"/>
+		</Unit>
 		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/client.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
+		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rent.cpp">
+			<Option target="Biblioteka"/>
+		</Unit>
+		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicle.cpp">
+			<Option target="Biblioteka"/>
+		</Unit>
 		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/ClientTest.cpp">
+			<Option target="TestBibl"/>
+		</Unit>
+		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/RentTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
 		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/master.cpp">

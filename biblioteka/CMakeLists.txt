@@ -3,6 +3,9 @@ project(Biblioteka)
 
 set(SOURCE_FILES
         src/model/client.cpp
+        src/model/address.cpp
+        src/model/vehicle.cpp
+        src/model/rent.cpp
         )
 #utwórz bibliotekę typu STATIC, SHARED albo MODULE ze wskazanych źródeł
 add_library(Biblioteka ${SOURCE_FILES})
@@ -15,9 +18,12 @@ include_directories(
         ${CMAKE_CURRENT_SOURCE_DIR}/include
         ${Boost_INCLUDE_DIRS}
 )
+
 set(SOURCE_TEST_FILES
         test/master.cpp
-        test/ClientTest.cpp)
+        test/ClientTest.cpp
+        test/RentTest.cpp
+        )
 
 add_executable (TestBibl ${SOURCE_TEST_FILES})
 

@@ -1,37 +1,46 @@
 //
 // Created by student on 26.04.2020.
 //
-#include <string>
 #include "model/client.h"
 
-using namespace std;
 
-Client::Client()
-{
-    cout << "Wywolano konstruktor bezparametrowy" << endl;
-}
-
-
-Client::Client(string imie, string nazwisko, string id, string adres)
+Client::Client(string imie, string nazwisko, string id, string ulica, int nrDomu, string ulica2, int nrDomu2)
 {
     firstName = imie;
     lastName = nazwisko;
     personalID = id;
-    address = adres;
-    cout << "Wywolano konstruktor parametrowy" << endl;
+    address = new Address(ulica, nrDomu);
+    registeredAddress = new Address(ulica2, nrDomu2);
 }
-
 
 Client::~Client()
 {
-    cout << "Wywolano destruktor" << endl;
+    address = nullptr;
+    registeredAddress = nullptr;
+    delete address;
+    delete registeredAddress;
 }
 
-string Client::clientInfo()
+void Client::clientInfo()
 {
-    string chain;
-    chain = firstName + lastName + personalID + address;
-    return chain;
+    int margin = 20;
+    cout << "_________________________________________________" <<endl;
+    cout << "Client Info:"<<endl;
+    cout.width(margin); cout << left << "Name: ";
+    cout << firstName + " " + lastName<<endl;
+    cout.width(margin); cout << left << "Personal ID: ";
+    cout << personalID <<endl;
+    if (address != nullptr)
+    {
+        cout.width(margin); cout << left << "Address: ";
+        cout << address->getStreet() + " " + to_string(address->getHouseNumber())<<endl;
+    }
+    if (registeredAddress != nullptr)
+    {
+        cout.width(20); cout << left << "Registered Address: ";
+        cout << registeredAddress->getStreet() + " " + to_string(registeredAddress->getHouseNumber())<<endl;
+    }
+    allRents();
 }
 
 void Client::setLastName(string newLastName)
@@ -39,10 +48,20 @@ void Client::setLastName(string newLastName)
     lastName = newLastName;
 }
 
-void Client::setAddress(string newAddress)
+void Client::setAddress(Address newAddress)
 {
-    address = newAddress;
+    *address = newAddress;
+    address->setStreet(address->getStreet());
+    address->setHouseNumber(address->getHouseNumber());
 }
+
+void Client::setRegisteredAddress(Address newAddress)
+{
+    *registeredAddress = newAddress;
+    registeredAddress->setStreet(registeredAddress->getStreet());
+    registeredAddress->setHouseNumber(registeredAddress->getHouseNumber());
+}
+
 
 string Client::getFirstName()
 {
@@ -61,5 +80,28 @@ string Client::getPersonalID()
 
 string Client::getAddress()
 {
-    return address;
+    string adres;
+    adres = address->getStreet() + to_string(address->getHouseNumber());
+    return adres;
+}
+
+string Client::getRegisteredAddress()
+{
+    string adres;
+    adres = registeredAddress->getStreet() + to_string(registeredAddress->getHouseNumber());
+    return adres;
+}
+
+void Client::addRent(Rent *r)
+{
+    rentVector.push_back(r);
+}
+
+void Client::allRents()
+{
+    for(int i=0; i<rentVector.size(); i++)
+    {
+        rentVector[i]->rentInfo();
+        cout<<endl;
+    }
 }
