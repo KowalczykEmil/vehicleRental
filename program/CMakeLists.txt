@@ -14,3 +14,4 @@ target_link_libraries(Program Biblioteka)
 
 #dołącz katalog include podprojektu Program do globalnej listy. Dzięki temu każdy inny podprojekt będzie ten katalog "widział"
 target_include_directories(Program PUBLIC include)
+enable_testing()
