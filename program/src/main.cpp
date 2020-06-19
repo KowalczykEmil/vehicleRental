@@ -1,21 +1,17 @@
 #include <iostream>
-#include "../include/model/Client.hpp"
+#include "model/client.h"
 
 using namespace std;
 
-main() {
-
-    cout<<"Hello world!"<<endl;
-    Client E1("Emil","Kowalczyk","9908110212");
-    Client D2;
-    cout<<E1.clientinfo()<<endl;
-    cout<<D2.clientinfo()<<endl;
-    E1.setFirstName("Andrzej");
-    D2.setFirstName("Dominik");
-    D2.setLastName("Świąder");
-    D2.setPersonalId("97031201771");
-    cout<<E1.clientinfo()<<endl;
-    cout<<D2.clientinfo()<<endl;
-
+int main() {
+    Client klient1, klient2("Emil", "Kowalczyk", "230178");
+    Client *klient3 = new Client("Dominik", "Swiader", "230214");
+    cout << klient1.clientInfo() << endl;
+    cout << klient2.clientInfo() << endl;
+    cout << (*klient3).clientInfo() << endl;
+    Client klient4("","","");
+    cout << klient4.clientInfo() << endl;
+    //klient1.firstName = "Andrzej";
+    delete klient3;
     return 0;
 }
