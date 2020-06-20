@@ -28,7 +28,13 @@ include_directories(
 set(SOURCE_TEST_FILES
         test/master.cpp
         test/ClientTest.cpp
+        test/AddressTest.cpp
         test/RentTest.cpp
+        test/BicycleTest.cpp
+        test/CarTest.cpp
+        test/MopedTest.cpp
+        test/CurrentRentsRepositoryTest.cpp
+        test/VehicleRepositoryTest.cpp
         )
 
 add_executable (TestBibl ${SOURCE_TEST_FILES})

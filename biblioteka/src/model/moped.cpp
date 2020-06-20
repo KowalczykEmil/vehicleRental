@@ -9,12 +9,9 @@ Moped::Moped(float price, string registrationNumber, float engineDisplacement)
 {
 }
 
-void Moped::vehicleInfo()
+string Moped::vehicleInfo()
 {
-    cout << "MOPED: Registration number :"<<registrationNumber<<". Price: "<< price <<". Engine displacement: "<<engineDisplacement<<endl;
+    string chain;
+    chain = "MOPED: " + MotorVehicle::vehicleInfo() + ". Price: " + to_string(getPrice());
+    return chain;
 }
-
-Moped::~Moped()
-{
-}
-

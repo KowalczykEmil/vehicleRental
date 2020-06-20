@@ -7,7 +7,7 @@
 //#ifndef address
 //#define address
 #include <string>
-#include <iostream>
+
 
 using namespace std;
 
@@ -18,11 +18,12 @@ private:
     int houseNumber;
 public:
     Address(string ulica, int numerDomu);
-    ~Address();
     void setStreet(string newStreet);
     void setHouseNumber(int newHouseNumber);
     string getStreet();
     int getHouseNumber();
+    string getAddress();
+    void setAddress(string, int);
 };
 
 #endif //POBIPROJECT_ADDRESS_H

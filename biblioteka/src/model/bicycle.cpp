@@ -10,11 +10,14 @@ Bicycle::Bicycle(float cena, string nrRejestracja)
 {
 }
 
-void Bicycle::vehicleInfo()
+string Bicycle::vehicleInfo()
 {
-    cout << "BICYCLE: Registration number :"<<registrationNumber<<". Price: "<< price <<endl;
+    string chain;
+    chain = "BICYCLE: " + Vehicle::vehicleInfo() + ". Price: " + to_string(getPrice());
+    return chain;
 }
 
-Bicycle::~Bicycle()
+float Bicycle::getPrice()
 {
+    return Vehicle::getPrice();
 }

@@ -13,9 +13,11 @@ Vehicle::~Vehicle()
 {
 }
 
-void Vehicle::vehicleInfo()
+string Vehicle::vehicleInfo()
 {
-    cout << "Registration number :"<<registrationNumber<<". Price: "<< price <<endl;
+    string chain;
+    chain = "Registration number :" + registrationNumber;
+    return chain;
 }
 
 float Vehicle::getPrice()

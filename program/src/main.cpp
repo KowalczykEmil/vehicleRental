@@ -9,8 +9,7 @@
 
 using namespace std;
 int main() {
-    Vehicle *tablica[10];
-    Bicycle Scott(110, "AB321");
+    VehiclePtr Scott = make_shared<Bicycle>(110, "AB321");
     Bicycle Giant(120, "BG456");
     Car OpelAstra(560, "ERW 52112", 1300, 'A');
     Car OpelZafira(700, "CW 53351", 1600, 'B');
@@ -20,28 +19,11 @@ int main() {
     Moped Cross(400, "WN", 1100);
     Moped Aprilla(150, "DT 231", 700);
     Moped Suzuki(130, "DG 32V", 500);
-    tablica[0] = &Scott;
-    tablica[1] = &Giant;
-    tablica[2] = &OpelAstra;
-    tablica[3] = &OpelZafira;
-    tablica[4] = &SkodaSuperb;
-    tablica[5] = &BMWM3;
-    tablica[6] = &Yamaha;
-    tablica[7] = &Cross;
-    tablica[8] = &Aprilla;
-    tablica[9] = &Suzuki;
-    Vehicle *vehicle;
-    VehicleRepository repozytorium;
-    for(unsigned int i = 0; i<10; i++)
-    {
-        vehicle = tablica[i];
-        repozytorium.addVehicle(vehicle);
-    }
-
-    repozytorium.vehicleRaport();
-    unsigned int index = 6;
-
-    cout<<endl<<"Choosen vehicle of index "<<index<<" is:  "<<endl;
-    repozytorium.getVehicle(index);
+    ClientPtr klient = make_shared<Client>("Emil", "Kowalczyk", "1234", "a", 2, "b", 3);
+    Rent wypozyczenie(klient, Scott);
+    int a;
+    cin >> a;
+    wypozyczenie.endRent();
+    cout << wypozyczenie.rentInfo();
     return 0;
 }

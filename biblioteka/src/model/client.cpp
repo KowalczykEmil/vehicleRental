@@ -2,6 +2,7 @@
 // Created by student on 26.04.2020.
 //
 #include "model/client.h"
+#include <sstream>
 
 
 Client::Client(string imie, string nazwisko, string id, string ulica, int nrDomu, string ulica2, int nrDomu2)
@@ -14,51 +15,33 @@ Client::Client(const Client &c)
 {
 }
 
-Client&Client:: operator= (const Client& c)
-{
-    delete address;
-    delete registeredAddress;
-    address = new Address(*c.address);
-    registeredAddress = new Address(*c.registeredAddress);
-    firstName = c.firstName;
-    lastName = c.lastName;
-    personalID = c.personalID;
-    return *this;
-}
-
 Client::~Client()
 {
-    address = nullptr;
-    registeredAddress = nullptr;
-    delete address;
-    delete registeredAddress;
-    for(unsigned int i=0; i<rentVector.size(); i++)
-    {
-        rentVector[i] = nullptr;
-        delete rentVector[i];
-    }
 }
 
-void Client::clientInfo()
+
+string Client::clientInfo()
 {
+    ostringstream chain;
     int margin = 20;
-    cout << "_________________________________________________" <<endl;
-    cout << "Client Info:"<<endl;
-    cout.width(margin); cout << left << "Name: ";
-    cout << firstName + " " + lastName<<endl;
-    cout.width(margin); cout << left << "Personal ID: ";
-    cout << personalID <<endl;
+    chain << endl << "_________________________________________________" <<endl;
+    chain << "Client Info:"<<endl;
+    chain.width(margin); chain << left <<  "Name: ";
+    chain << getFullName() <<endl;
+    chain.width(margin); chain  << left << "Personal ID: ";
+    chain << personalID <<endl;
     if (address != nullptr)
     {
-        cout.width(margin); cout << left << "Address: ";
-        cout << address->getStreet() + " " + to_string(address->getHouseNumber())<<endl;
+        chain.width(margin); chain << left << "Address: ";
+        chain << address->getAddress() <<endl;
     }
     if (registeredAddress != nullptr)
     {
-        cout.width(20); cout << left << "Registered Address: ";
-        cout << registeredAddress->getStreet() + " " + to_string(registeredAddress->getHouseNumber())<<endl;
+        chain.width(20); chain << left << "Registered Address: ";
+        chain << registeredAddress->getAddress() <<endl;
     }
-    allRents();
+    chain << allRents();
+    return chain.str();
 }
 
 void Client::setLastName(string newLastName)
@@ -99,14 +82,14 @@ string Client::getPersonalID()
 string Client::getAddress()
 {
     string adres;
-    adres = address->getStreet() + to_string(address->getHouseNumber());
+    adres = address->getStreet() + " " + to_string(address->getHouseNumber());
     return adres;
 }
 
 string Client::getRegisteredAddress()
 {
     string adres;
-    adres = registeredAddress->getStreet() + to_string(registeredAddress->getHouseNumber());
+    adres = registeredAddress->getStreet() + " " + to_string(registeredAddress->getHouseNumber());
     return adres;
 }
 
@@ -115,11 +98,17 @@ void Client::addRent(Rent *r)
     rentVector.push_back(r);
 }
 
-void Client::allRents()
+string Client::allRents()
 {
+    ostringstream chain;
     for(unsigned int i=0; i<rentVector.size(); i++)
     {
-        rentVector[i]->rentInfo();
-        cout<<endl;
+        chain<<rentVector[i]->rentInfo()<<endl;
     }
+    return chain.str();
+}
+
+string Client::getFullName()
+{
+    return firstName + " " + lastName;
 }

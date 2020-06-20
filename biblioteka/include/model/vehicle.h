@@ -4,20 +4,23 @@
 #ifndef POBIPROJECT_VEHICLE_H
 #define POBIPROJECT_VEHICLE_H
 #include <string>
-#include <iostream>
+#include <memory>
+
 
 using namespace std;
 
 class Vehicle
 {
-protected:
+private:
     float price;
     string registrationNumber;
 public:
     Vehicle(float price, string registrationNumber);
     virtual ~Vehicle();
-    virtual void vehicleInfo();
+    virtual string vehicleInfo();
     virtual float getPrice();
-    virtual string getRegistrationNumber();
+    string getRegistrationNumber();
 };
+typedef shared_ptr<Vehicle> VehiclePtr;
+
 #endif //POBIPROJECT_VEHICLE_H

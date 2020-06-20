@@ -4,19 +4,20 @@
 #ifndef POBIPROJECT_MOTORVEHICLE_H
 #define POBIPROJECT_MOTORVEHICLE_H
 #include <string>
-#include <iostream>
 #include "vehicle.h"
 
 using namespace std;
 
 class MotorVehicle : public Vehicle
 {
-protected:
+private:
     float engineDisplacement;
-    void setPrice();
-    MotorVehicle(float price, string registrationNumber, float engineCapacity);
+    float getWage();
 public:
-    ~MotorVehicle();
+    MotorVehicle(float price, string registrationNumber, float engineCapacity);
+    virtual ~MotorVehicle();
     float getEngineDisplacement();
+    virtual string vehicleInfo() override;
+    virtual float getPrice() override;
 };
 #endif //POBIPROJECT_MOTORVEHICLE_H

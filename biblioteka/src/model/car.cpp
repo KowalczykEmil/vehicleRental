@@ -2,24 +2,22 @@
 // Created by student on 18.06.2020.
 //
 #include "model/car.h"
+#include <iostream>
 
 
 Car::Car(float price, string registrationNumber, float engineDisplacement, char seg)
         : MotorVehicle(price, registrationNumber, engineDisplacement), segment(seg)
 {
-    setPrice();
 }
 
-Car::~Car()
+string Car::vehicleInfo()
 {
+    string chain;
+    chain = "CAR: " + MotorVehicle::vehicleInfo() + ". Price: " + to_string(getPrice()) + ". Car class: " + segment;
+    return chain;
 }
 
-void Car::vehicleInfo()
-{
-    cout << "CAR: Registration number :"<<registrationNumber<<". Price: "<< price <<". Engine displacement: "<<engineDisplacement<<". Car class: "<<segment<<endl;
-}
-
-void Car::setPrice()
+float Car::getWage()
 {
     float wage = 0;
     if(segment == 'A')
@@ -42,8 +40,12 @@ void Car::setPrice()
     {
         wage = 1.5;
     }
+    return wage;
+}
 
-    price = wage * MotorVehicle::price;
+float Car::getPrice()
+{
+    return MotorVehicle::getPrice() * getWage();
 }
 
 
