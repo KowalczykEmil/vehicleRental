@@ -5,11 +5,8 @@
 #ifndef POBIPROJECT_VEHICLEREPOSITORY_H
 #define POBIPROJECT_VEHICLEREPOSITORY_H
 #include <string>
-#include <iostream>
-#include "model/bicycle.h"
-#include "model/car.h"
-#include "model/moped.h"
 #include <list>
+#include "model/vehicle.h"
 
 
 using namespace std;
@@ -18,13 +15,13 @@ using namespace std;
 class VehicleRepository
 {
 private:
-    list<Vehicle *> vehicleRepository{};
+    list<VehiclePtr> vehicleRepository{};
 public:
     VehicleRepository();
     ~VehicleRepository();
-    void addVehicle(Vehicle *);
-    void removeVehicle(Vehicle *v);
-    void getVehicle(unsigned int index);
-    void vehicleRaport();
+    void addVehicle(VehiclePtr);
+    void removeVehicle(VehiclePtr);
+    string getVehicle(unsigned int index);
+    string vehicleRaport();
 };
 #endif //POBIPROJECT_VEHICLEREPOSITORY_H

@@ -2,7 +2,7 @@
 // Created by student on 18.06.2020.
 //
 #include "model/currentRentsRepository.h"
-
+#include <sstream>
 
 CurrentRentsRepository::CurrentRentsRepository()
 {
@@ -11,16 +11,11 @@ CurrentRentsRepository::CurrentRentsRepository()
 
 CurrentRentsRepository::~CurrentRentsRepository()
 {
-    for (list<Rent*>::iterator it = rentRepositoryList.begin(); it != rentRepositoryList.end(); it++)
-    {
-        (*it)=nullptr;
-        delete *it;
-    }
 }
 
-void CurrentRentsRepository::createRent(Rent *r)
+void CurrentRentsRepository::createRent(shared_ptr<Rent> r)
 {
-    list<Rent *>::iterator it;
+    list<shared_ptr<Rent>>::iterator it;
     bool isRented = false;
     for(it = rentRepositoryList.begin(); it != rentRepositoryList.end(); ++it)
     {
@@ -34,33 +29,35 @@ void CurrentRentsRepository::createRent(Rent *r)
     {
         rentRepositoryList.push_back(r);
     }
-    else
-    {
-        cout<<endl<<"This vehicle is already rented"<<endl;
-    }
 }
-
-void CurrentRentsRepository::removeRent(Rent *r)
+void CurrentRentsRepository::removeRent(shared_ptr<Rent> r)
 {
     rentRepositoryList.remove(r);
 }
 
-void CurrentRentsRepository::getClientForRentedVehicle(Vehicle *v)
+string CurrentRentsRepository::getClientForRentedVehicle(shared_ptr<Vehicle> v)
 {
-    list<Rent *>::iterator it;
+    string clientInfo = "";
+    list<shared_ptr<Rent>>::iterator it;
     for(it = rentRepositoryList.begin(); it != rentRepositoryList.end(); ++it)
     {
         if((*it)->vehicle == v)
         {
-            (*it)->client->clientInfo();
+            clientInfo = (*it)->client->clientInfo();
             break;
         }
     }
+    return clientInfo;
 }
 
-void CurrentRentsRepository::rentReport()
+string CurrentRentsRepository::rentReport()
 {
-    for (list<Rent*>::iterator it = rentRepositoryList.begin(); it != rentRepositoryList.end(); it++)
-        (*it)->rentInfo();
+    ostringstream chain;
+    for (list<shared_ptr<Rent>>::iterator it = rentRepositoryList.begin(); it != rentRepositoryList.end(); it++)
+        chain<<(*it)->rentInfo();
+    return chain.str();
 }
+
+
+
 

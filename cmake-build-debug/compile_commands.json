@@ -61,8 +61,38 @@
 },
 {
   "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/AddressTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/AddressTest.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/AddressTest.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
   "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/RentTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/RentTest.cpp",
   "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/RentTest.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/BicycleTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/BicycleTest.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/BicycleTest.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/CarTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/CarTest.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/CarTest.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/MopedTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/MopedTest.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/MopedTest.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/CurrentRentsRepositoryTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/CurrentRentsRepositoryTest.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/CurrentRentsRepositoryTest.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/VehicleRepositoryTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/VehicleRepositoryTest.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/VehicleRepositoryTest.cpp"
 },
 {
   "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program",

@@ -10,11 +10,6 @@ Address::Address(string ulica, int numerDomu)
 {
 }
 
-Address::~Address()
-{
-}
-
-
 void Address::setStreet(string newStreet)
 {
     street = newStreet;
@@ -33,4 +28,15 @@ string Address::getStreet()
 int Address::getHouseNumber()
 {
     return houseNumber;
+}
+
+string Address::getAddress()
+{
+    return getStreet() + " " + to_string(getHouseNumber());
+}
+
+void Address::setAddress(string newStreet, int number)
+{
+    setStreet(newStreet);
+    setHouseNumber(number);
 }

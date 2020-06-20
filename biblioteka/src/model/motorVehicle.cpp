@@ -7,7 +7,6 @@
 MotorVehicle::MotorVehicle(float price, string registrationNumber, float engineCapacity)
         : Vehicle(price, registrationNumber), engineDisplacement(engineCapacity)
 {
-    setPrice();
 }
 
 MotorVehicle::~MotorVehicle()
@@ -19,7 +18,14 @@ float MotorVehicle::getEngineDisplacement()
     return engineDisplacement;
 }
 
-void MotorVehicle::setPrice()
+string MotorVehicle::vehicleInfo()
+{
+    string chain;
+    chain = Vehicle::vehicleInfo() + ". Engine displacement: " + to_string(engineDisplacement);
+    return chain;
+}
+
+float MotorVehicle::getWage()
 {
     float wage = 0;
     if (engineDisplacement < 1000)
@@ -34,6 +40,11 @@ void MotorVehicle::setPrice()
     {
         wage = 1.5;
     }
-    price = wage * Vehicle::price;
+    return wage;
+}
+
+float MotorVehicle::getPrice()
+{
+    return Vehicle::getPrice() * getWage();
 }
 
