@@ -12,7 +12,9 @@
 #include <boost/uuid/uuid.hpp>            // uuid class
 #include <boost/uuid/uuid_generators.hpp> // generators
 #include <boost/uuid/uuid_io.hpp>
-
+#include "model/currentRentsRepository.h"
+#include <sstream>
+#include <list>
 
 using namespace std;
 using namespace boost::local_time;
@@ -26,15 +28,18 @@ class Rent
 {
 private:
     uuid ID;
+    time_zone_ptr *timeZone;
     local_date_time *rentDateTime;
     local_date_time *endDateTime;
     float totalPrice;
     Vehicle *vehicle;
     Client *client;
     int rentalLength;
-    time_zone_ptr *timeZone;
+    friend class CurrentRentsRepository;
 public:
     Rent(Client &klient, Vehicle &pojazd);
+    Rent(const Rent &r);
+    Rent& operator= (const Rent&);
     ~Rent();
     void rentInfo();
     void endRent();

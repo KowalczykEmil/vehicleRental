@@ -13,6 +13,7 @@
 using namespace std;
 
 class Rent;
+
 class Client
 {
 private:
@@ -24,6 +25,8 @@ private:
     vector<Rent *> rentVector{};
 public:
     Client(string imie, string nazwisko, string id, string ulica, int nrDomu, string ulica2, int nrDomu2);
+    Client(const Client &c);
+    Client& operator= (const Client&);
     ~Client();
     void clientInfo();
     void setLastName(string newLastName);

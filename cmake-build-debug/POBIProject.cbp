@@ -207,13 +207,31 @@
 		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/address.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
+		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/bicycle.cpp">
+			<Option target="Biblioteka"/>
+		</Unit>
+		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/car.cpp">
+			<Option target="Biblioteka"/>
+		</Unit>
 		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/client.cpp">
+			<Option target="Biblioteka"/>
+		</Unit>
+		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/currentRentsRepository.cpp">
+			<Option target="Biblioteka"/>
+		</Unit>
+		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/moped.cpp">
+			<Option target="Biblioteka"/>
+		</Unit>
+		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/motorVehicle.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
 		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rent.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
 		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicle.cpp">
+			<Option target="Biblioteka"/>
+		</Unit>
+		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleRepository.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
 		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/ClientTest.cpp">

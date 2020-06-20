@@ -1,21 +1,37 @@
 //
 // Created by student on 17.06.2020.
 #include "model/rent.h"
-#include <sstream>
 
 
 Rent::Rent(Client &klient, Vehicle &pojazd)
+        :ID(random_generator()()), timeZone(new time_zone_ptr(new posix_time_zone("CET+0"))),
+         rentDateTime(new local_date_time((second_clock::local_time()), *timeZone)), endDateTime(nullptr), totalPrice(0), vehicle(&pojazd), client(&klient), rentalLength(0)
 {
-    client = &klient;
-    vehicle = &pojazd;
-    timeZone = new time_zone_ptr(new posix_time_zone("CET+0"));
-    ptime pt(second_clock::local_time());
-    rentDateTime = new local_date_time(pt, *timeZone);
-    endDateTime = nullptr;
-    ID = boost::uuids::random_generator()();
-    totalPrice = 0;
-    rentalLength = 0;
     client -> addRent(this);
+}
+
+Rent::Rent(const Rent &r)
+        :ID(r.ID), timeZone(new time_zone_ptr(*r.timeZone)), rentDateTime(new local_date_time(*r.rentDateTime)),
+         endDateTime(new local_date_time(*r.endDateTime)), totalPrice(r.totalPrice), vehicle(new Vehicle(*r.vehicle)), client(new Client(*r.client)), rentalLength(r.rentalLength)
+{
+}
+
+Rent&Rent:: operator= (const Rent& r)
+{
+    delete client;
+    delete vehicle;
+    delete timeZone;
+    delete rentDateTime;
+    delete endDateTime;
+    client = new Client(*r.client);
+    vehicle = new Vehicle(*r.vehicle);
+    timeZone = new time_zone_ptr(*r.timeZone);
+    rentDateTime = new local_date_time(*r.rentDateTime);
+    endDateTime = new local_date_time(*r.endDateTime);
+    ID = r.ID;
+    totalPrice = r.totalPrice;
+    rentalLength = r.rentalLength;
+    return *this;
 }
 
 Rent::~Rent()
@@ -23,9 +39,13 @@ Rent::~Rent()
     rentDateTime = nullptr;
     endDateTime = nullptr;
     timeZone = nullptr;
+    vehicle = nullptr;
+    client = nullptr;
     delete rentDateTime;
     delete endDateTime;
     delete timeZone;
+    delete vehicle;
+    delete client;
 }
 
 void Rent::endRent()
@@ -69,7 +89,7 @@ void Rent::rentInfo()
     cout.width(margin); cout << left << "Client: ";
     cout << client->getFirstName() + " " + client->getLastName()<<endl;
     cout.width(margin); cout << left << "Vehicle: ";
-    cout << vehicle->vehicleInfo()<<endl;
+    cout << vehicle->getRegistrationNumber()<<endl;
 }
 
 float Rent::getPrice()
@@ -79,12 +99,11 @@ float Rent::getPrice()
 
 string Rent::getClient()
 {
-    return client->getFirstName() + client->getLastName();
+    return client->getPersonalID();
 }
-
 string Rent::getVehicleRented()
 {
-    return vehicle->vehicleInfo();
+    return vehicle->getRegistrationNumber();
 }
 
 local_date_time Rent::getRentDate()
@@ -102,4 +121,5 @@ int Rent::getRentalLength()
     return rentalLength;
 }
 //
+
 

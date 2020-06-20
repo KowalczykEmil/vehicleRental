@@ -5,12 +5,25 @@
 
 
 Client::Client(string imie, string nazwisko, string id, string ulica, int nrDomu, string ulica2, int nrDomu2)
+        :firstName(imie), lastName(nazwisko), personalID(id), address(new Address(ulica, nrDomu)), registeredAddress(new Address(ulica2, nrDomu2))
 {
-    firstName = imie;
-    lastName = nazwisko;
-    personalID = id;
-    address = new Address(ulica, nrDomu);
-    registeredAddress = new Address(ulica2, nrDomu2);
+}
+
+Client::Client(const Client &c)
+        :firstName(c.firstName), lastName(c.lastName), personalID(c.personalID), address(new Address(*c.address)), registeredAddress(new Address(*c.registeredAddress))
+{
+}
+
+Client&Client:: operator= (const Client& c)
+{
+    delete address;
+    delete registeredAddress;
+    address = new Address(*c.address);
+    registeredAddress = new Address(*c.registeredAddress);
+    firstName = c.firstName;
+    lastName = c.lastName;
+    personalID = c.personalID;
+    return *this;
 }
 
 Client::~Client()
@@ -19,6 +32,11 @@ Client::~Client()
     registeredAddress = nullptr;
     delete address;
     delete registeredAddress;
+    for(unsigned int i=0; i<rentVector.size(); i++)
+    {
+        rentVector[i] = nullptr;
+        delete rentVector[i];
+    }
 }
 
 void Client::clientInfo()
@@ -99,7 +117,7 @@ void Client::addRent(Rent *r)
 
 void Client::allRents()
 {
-    for(int i=0; i<rentVector.size(); i++)
+    for(unsigned int i=0; i<rentVector.size(); i++)
     {
         rentVector[i]->rentInfo();
         cout<<endl;

@@ -6,9 +6,8 @@
 
 
 Address::Address(string ulica, int numerDomu)
+        : street(ulica), houseNumber(numerDomu)
 {
-    street = ulica;
-    houseNumber = numerDomu;
 }
 
 Address::~Address()
