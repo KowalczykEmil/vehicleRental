@@ -11,7 +11,7 @@ using namespace std;
 class Bicycle : public Vehicle
 {
 public:
-    Bicycle(float price, string registrationNumber);
+    Bicycle(float, string);
     string vehicleInfo() override;
     float getPrice() override;
 };

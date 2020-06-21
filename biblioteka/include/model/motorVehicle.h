@@ -15,9 +15,10 @@ private:
     float getWage();
 public:
     MotorVehicle(float price, string registrationNumber, float engineCapacity);
-    virtual ~MotorVehicle();
+    virtual ~MotorVehicle()= default;
     float getEngineDisplacement();
-    virtual string vehicleInfo() override;
-    virtual float getPrice() override;
+    string vehicleInfo() override;
+    float getPrice() override;
 };
+
 #endif //POBIPROJECT_MOTORVEHICLE_H

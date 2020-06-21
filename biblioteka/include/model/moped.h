@@ -11,7 +11,7 @@ using namespace std;
 class Moped : public MotorVehicle
 {
 public:
-    Moped(float price, string registrationNumber, float engineDisplacement);
-    string vehicleInfo();
+    Moped(float, string, float);
+    string vehicleInfo() override;
 };
 #endif //POBIPROJECT_MOPED_H

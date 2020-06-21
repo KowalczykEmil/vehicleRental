@@ -5,6 +5,9 @@
 #include "model/rent.h"
 #include "model/client.h"
 #include "model/vehicle.h"
+#include "model/clientGold.h"
+#include "model/clientBronze.h"
+#include "model/clientSilver.h"
 
 
 BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
@@ -13,17 +16,17 @@ BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
     {
         ClientPtr client = make_shared<Client>("Emil", "Kowalczyk", "123", "Zwolinskiego", 8, "Lowicka", 13);
         VehiclePtr pojazd = make_shared<Vehicle>(1010.2, "5Y80");
-        Rent wypozyczenie(client, pojazd);
-        BOOST_REQUIRE_EQUAL(wypozyczenie.getPeriod(), 0);
+        Rent wypozyczenie(client, pojazd, 7);
+        BOOST_REQUIRE_EQUAL(wypozyczenie.getPeriod(), 7);
     }
 
     BOOST_AUTO_TEST_CASE(RentEndDateTimeCase)
     {
         ClientPtr client = make_shared<Client>("Emil", "Kowalczyk", "123", "Zwolinskiego", 8, "Lowicka", 13);
         VehiclePtr pojazd = make_shared<Vehicle>(1010.2, "5Y80");
-        Rent wypozyczenie(client, pojazd);
+        Rent wypozyczenie(client, pojazd, 10);
         wypozyczenie.endRent();
-        BOOST_REQUIRE(wypozyczenie.getRentalLength() > 0);
+        BOOST_REQUIRE(wypozyczenie.getRentalLength() == 11);
     }
 
     BOOST_AUTO_TEST_CASE(RentPeriodTimeCase)
@@ -61,5 +64,17 @@ BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
         BOOST_REQUIRE_EQUAL(wypozyczenie.getClient(), "123");
     }
 
+    BOOST_AUTO_TEST_CASE(RentTotalPriceCase)
+    {
+        ClientPtr client = make_shared<Client>("Emil", "Kowalczyk", "123", "Zwolinskiego", 8, "Lowicka", 13);
+        VehiclePtr pojazd = make_shared<Vehicle>(1010.2, "5Y80");
+        Rent wypozyczenie(client, pojazd);
+        ClientTypePtr typeOfClient(new ClientGold);
+        (*client).setClientType(typeOfClient);
+        wypozyczenie.endRent();
+        BOOST_REQUIRE_EQUAL(wypozyczenie.getTotalPrice(), int(pojazd->getPrice() * (1 - client -> getDiscount())));
+    }
+
 
 BOOST_AUTO_TEST_SUITE_END()
+

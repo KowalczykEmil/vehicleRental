@@ -9,10 +9,6 @@ MotorVehicle::MotorVehicle(float price, string registrationNumber, float engineC
 {
 }
 
-MotorVehicle::~MotorVehicle()
-{
-}
-
 float MotorVehicle::getEngineDisplacement()
 {
     return engineDisplacement;

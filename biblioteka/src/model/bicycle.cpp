@@ -5,8 +5,8 @@
 #include "model/bicycle.h"
 
 
-Bicycle::Bicycle(float cena, string nrRejestracja)
-        : Vehicle(cena, nrRejestracja)
+Bicycle::Bicycle(float price_, string registrationNumber_)
+        : Vehicle(price_, registrationNumber_)
 {
 }
 
@@ -21,3 +21,4 @@ float Bicycle::getPrice()
 {
     return Vehicle::getPrice();
 }
+

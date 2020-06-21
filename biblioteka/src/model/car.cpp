@@ -2,11 +2,10 @@
 // Created by student on 18.06.2020.
 //
 #include "model/car.h"
-#include <iostream>
 
 
-Car::Car(float price, string registrationNumber, float engineDisplacement, char seg)
-        : MotorVehicle(price, registrationNumber, engineDisplacement), segment(seg)
+Car::Car(float price, string registrationNumber, float engineDisplacement, char segment_)
+        : MotorVehicle(price, registrationNumber, engineDisplacement), segment(segment_)
 {
 }
 
@@ -47,6 +46,7 @@ float Car::getPrice()
 {
     return MotorVehicle::getPrice() * getWage();
 }
+
 
 
 

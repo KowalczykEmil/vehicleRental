@@ -1,0 +1,13 @@
+//
+// Created by student on 19.06.2020.
+//
+
+#include "model/vehicleRepositoryException.h"
+
+VehicleRepositoryException::VehicleRepositoryException(const string& arg) : logic_error(arg)
+{}
+
+
+const string VehicleRepositoryException::exceptionVehicleExists = "THIS VEHICLE ALREADY EXISTS IN THE REPOSITORY";
+const string VehicleRepositoryException::exceptionVehicleNotFound = "THIS VEHICLE CANNOT BE FOUND IN THE REPOSITORY";
+const string VehicleRepositoryException::exceptionVehicleNullPtr = "INVALID VEHICLE (NULL)";

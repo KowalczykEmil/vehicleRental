@@ -5,22 +5,19 @@
 #ifndef POBIPROJECT_RENT_H
 #define POBIPROJECT_RENT_H
 #include <string>
-#include "model/vehicle.h"
-#include "model/client.h"
-#include <boost/date_time/local_time/local_time.hpp>
-#include <boost/uuid/uuid.hpp>            // uuid class
-#include "model/currentRentsRepository.h"
 #include <memory>
-
+#include <boost/date_time/local_time/local_time.hpp>
+#include <boost/uuid/uuid.hpp>
 
 using namespace std;
 using namespace boost::local_time;
 using namespace boost::posix_time;
 using namespace boost::uuids;
-
-
 class Client;
-
+class Vehicle;
+class RentsManager;
+typedef shared_ptr<Client> ClientPtr;
+typedef shared_ptr<Vehicle> VehiclePtr;
 
 class Rent
 {
@@ -29,14 +26,14 @@ private:
     local_date_time *rentDateTime;
     local_date_time *endDateTime;
     float totalPrice;
-    shared_ptr<Vehicle> vehicle;
-    shared_ptr<Client> client;
+    VehiclePtr vehicle;
+    ClientPtr client;
     int rentalLength;
-    friend class CurrentRentsRepository;
+    friend class RentsManager;
 public:
-    Rent(shared_ptr<Client>, shared_ptr<Vehicle>);
-    Rent& operator= (const Rent&);
+    Rent(ClientPtr, VehiclePtr, int=0);
     Rent(const Rent &r);
+    Rent& operator= (const Rent&) = default;
     ~Rent();
     string rentInfo();
     void endRent();
@@ -47,7 +44,9 @@ public:
     local_date_time getRentDate();
     local_date_time getEndDate();
     int getRentalLength();
+    int getTotalPrice();
+    uuid getID();
 };
-typedef shared_ptr<Rent> RentPtr;
+
 
 #endif //POBIPROJECT_RENT_H

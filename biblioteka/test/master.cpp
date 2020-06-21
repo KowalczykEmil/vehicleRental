@@ -17,7 +17,7 @@ struct MyConfig
         //      unit_test_log.set_threshold_level( log_level::all );
         //      expected_failures(2);
         //      timeout(1);
-//              tolerance(0.0001);
+        tolerance(0.01);
     }
 
     ~MyConfig()
@@ -26,3 +26,4 @@ struct MyConfig
 };
 
 BOOST_GLOBAL_FIXTURE(MyConfig);
+
