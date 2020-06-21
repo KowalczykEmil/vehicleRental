@@ -1,36 +1,35 @@
 //
 // Created by student on 19.06.2020.
 //
-
 #ifndef POBIPROJECT_CLIENTREPOSITORY_H
 #define POBIPROJECT_CLIENTREPOSITORY_H
 #include <list>
 #include <string>
 #include <memory>
-//#include "model/repository.h"
+#include "model/repository.h"
 
 using namespace std;
 class Client;
 class Rent;
 class ClientType;
-class ClientManager;
 typedef shared_ptr<Client> ClientPtr;
 typedef shared_ptr<Rent> RentPtr;
 typedef shared_ptr<ClientType> ClientTypePtr;
 
-class ClientRepository
+class ClientRepository : public Repository<Client>
 {
 private:
     list<ClientPtr> allClients{};
-    friend class ClientManager;
 public:
-    void addClient(ClientPtr);
-    void removeClient(ClientPtr);
-    void removeClient(unsigned int);
-    void changeType(ClientPtr, ClientTypePtr);
-    string clientRepositoryInfo();
-    unsigned int getNumberOfClients();
+    void create(const ClientPtr&) override;
+    void remove(const ClientPtr&) override;
+    void remove(const unsigned int&);
+    void changeType(const ClientPtr&, const ClientTypePtr&);
+    string getAll() const override;
+    const ClientPtr& search(const unsigned int&) const override;
+    const list<ClientPtr>& getRepository() const override;
 };
+
 
 
 #endif //POBIPROJECT_CLIENTREPOSITORY_H

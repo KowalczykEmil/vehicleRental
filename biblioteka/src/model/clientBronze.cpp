@@ -18,3 +18,4 @@ string ClientBronze::getType()
     return "BRONZE";
 }
 
+

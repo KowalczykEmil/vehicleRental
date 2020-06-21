@@ -5,5 +5,6 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: ../biblioteka/include/model/clien
 program/CMakeFiles/Program.dir/src/main.cpp.o: ../biblioteka/include/model/clientGold.h
 program/CMakeFiles/Program.dir/src/main.cpp.o: ../biblioteka/include/model/clientRepository.h
 program/CMakeFiles/Program.dir/src/main.cpp.o: ../biblioteka/include/model/clientType.h
+program/CMakeFiles/Program.dir/src/main.cpp.o: ../biblioteka/include/model/repository.h
 program/CMakeFiles/Program.dir/src/main.cpp.o: ../program/src/main.cpp
 

@@ -12,10 +12,10 @@ class Car : public MotorVehicle
 {
 private:
     char segment;
-    float getWage();
+    double getWage() const;
 public:
-    Car(float, string, float, char);
-    string vehicleInfo() override;
-    float getPrice() override;
+    Car(const int&, const string&, const float&, const char&);
+    string vehicleInfo() const override;
+    int getPrice() const override;
 };
 #endif //POBIPROJECT_CAR_H

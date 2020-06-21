@@ -13,5 +13,4 @@ public:
     int vehicleLimit() override;
     string getType() override;
 };
-
 #endif //POBIPROJECT_CLIENTBRONZE_H

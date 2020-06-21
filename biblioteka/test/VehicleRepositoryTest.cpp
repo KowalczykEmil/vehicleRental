@@ -28,10 +28,10 @@ BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
         ostringstream chain;
         for(unsigned int i = 0; i<10; i++)
         {
-            repozytorium.addVehicle(tablica[i]);
+            repozytorium.create(tablica[i]);
             chain << i+1 << "- " << tablica[i]->vehicleInfo()<<endl;
         }
-        BOOST_REQUIRE_EQUAL(repozytorium.vehicleRaport(), chain.str());
+        BOOST_REQUIRE_EQUAL(repozytorium.getAll(), chain.str());
     }
 
     BOOST_AUTO_TEST_CASE(VehicleRepositoryGetVehicleCase)
@@ -51,13 +51,13 @@ BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
         ostringstream chain;
         for(unsigned int i = 0; i<10; i++)
         {
-            repozytorium.addVehicle(tablica[i]);
+            repozytorium.create(tablica[i]);
             if(i==3)
             {
                 chain << tablica[i]->vehicleInfo();
             }
         }
-        BOOST_REQUIRE_EQUAL(repozytorium.getVehicle(4), chain.str());
+        BOOST_REQUIRE_EQUAL(repozytorium.search(4), tablica[3]);
     }
 
 

@@ -23,13 +23,13 @@ BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
     BOOST_AUTO_TEST_CASE(ClientFirstNameCase)
     {
         Client client("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
-        BOOST_REQUIRE_EQUAL(client.getFirstName(), "Jan");
+        BOOST_REQUIRE_EQUAL(client.getFullName(), "Jan Kowalski");
     }
 
     BOOST_AUTO_TEST_CASE(ClientLastNameCase)
     {
         Client client("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
-        BOOST_REQUIRE_EQUAL(client.getLastName(), "Kowalski");
+        BOOST_REQUIRE_EQUAL(client.getFullName(), "Jan Kowalski");
     }
 
     BOOST_AUTO_TEST_CASE(ClientPersonalIDCase)
@@ -53,16 +53,14 @@ BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
     BOOST_AUTO_TEST_CASE(ClientSetNewAddressCase)
     {
         Client client("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
-        Address NewAddress("new adres", 333);
-        client.setAddress(NewAddress);
+        client.setAddress("new adres", 333);
         BOOST_CHECK_EQUAL(client.getAddress(), "new adres 333");
     }
 
     BOOST_AUTO_TEST_CASE(ClientSetNewRegisteredAddressCase)
     {
         Client client("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
-        Address NewAddress("new adres", 333);
-        client.setRegisteredAddress(NewAddress);
+        client.setRegisteredAddress("new adres", 333);
         BOOST_CHECK_EQUAL(client.getRegisteredAddress(), "new adres 333");
     }
 
@@ -70,7 +68,7 @@ BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
     {
         Client client("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
         client.setLastName("Duuuu");
-        BOOST_CHECK_EQUAL(client.getLastName(), "Duuuu");
+        BOOST_CHECK_EQUAL(client.getFullName(), "Jan Duuuu");
     }
 
     BOOST_AUTO_TEST_CASE(ClientGetDefaultDiscountCase)

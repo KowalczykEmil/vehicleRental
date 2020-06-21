@@ -27,9 +27,19 @@ string
 -
 memory
 -
+model/repository.h
+../biblioteka/include/model/model/repository.h
 
 ../biblioteka/include/model/clientType.h
 string
+-
+
+../biblioteka/include/model/repository.h
+memory
+-
+string
+-
+list
 -
 
 /home/student/Nowe/pobiz_mkwa_ni_08/program/src/main.cpp

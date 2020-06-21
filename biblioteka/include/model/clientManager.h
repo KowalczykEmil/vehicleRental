@@ -19,10 +19,10 @@ class ClientManager{
     ClientRepoPtr archiveClients;
 public:
     ClientManager();
-    void addClient(ClientPtr);
-    void removeClient(ClientPtr);
-    int getNumberOfArchClients();
-    int getNumberOfCurrentClients();
+    void addClient(const ClientPtr&);
+    void removeClient(const ClientPtr&);
+    int getNumberOfArchClients() const;
+    int getNumberOfCurrentClients() const;
 };
 
 #endif //POBIPROJECT_CLIENTMENAGER_H

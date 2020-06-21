@@ -5,20 +5,21 @@
 #include "model/bicycle.h"
 
 
-Bicycle::Bicycle(float price_, string registrationNumber_)
+Bicycle::Bicycle(const int& price_, const string& registrationNumber_)
         : Vehicle(price_, registrationNumber_)
 {
 }
 
-string Bicycle::vehicleInfo()
+string Bicycle::vehicleInfo() const
 {
     string chain;
     chain = "BICYCLE: " + Vehicle::vehicleInfo() + ". Price: " + to_string(getPrice());
     return chain;
 }
 
-float Bicycle::getPrice()
+int Bicycle::getPrice() const
 {
     return Vehicle::getPrice();
 }
+
 

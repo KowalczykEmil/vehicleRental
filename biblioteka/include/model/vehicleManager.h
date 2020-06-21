@@ -18,10 +18,10 @@ class VehicleManager{
     shared_ptr<VehicleRepository> archiveVehicles;
 public:
     VehicleManager();
-    void addVehicle(VehiclePtr);
-    void removeVehicle(VehiclePtr);
-    int getNumberOfArchVehicles();
-    int getNumberOfCurrentVehicles();
+    void addVehicle(const VehiclePtr&);
+    void removeVehicle(const VehiclePtr&);
+    int getNumberOfArchVehicles() const;
+    int getNumberOfCurrentVehicles() const;
 };
 
 #endif //POBIPROJECT_VEHICLEMENAGER_H

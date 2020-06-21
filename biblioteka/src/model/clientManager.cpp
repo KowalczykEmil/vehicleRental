@@ -12,57 +12,42 @@
 
 ClientManager::ClientManager()
         : currentClients(new ClientRepository), archiveClients(new ClientRepository)
-{
-}
+{}
 
-void ClientManager::addClient(ClientPtr client)
+void ClientManager::addClient(const ClientPtr &client)
 {
-    bool exists = false;
-    bool archived = false;
-    for(const auto& c : currentClients->allClients)
+    for(const auto& c : currentClients->getRepository())
     {
-        if(client->getPersonalID() == c->getPersonalID())
+        if(*client == *c)
         {
-            exists = true;
+            throw ClientRepositoryException(ClientRepositoryException::exceptionClientExist);
+        }
+    }
+    for(const auto& c : archiveClients->getRepository())
+    {
+        if(*client == *c)
+        {
+            archiveClients->remove(client);
             break;
         }
     }
-    for(const auto& c : archiveClients->allClients)
-    {
-        if(client->getPersonalID() == c->getPersonalID())
-        {
-            archived = true;
-            break;
-        }
-    }
-    if(exists)
-    {
-        throw ClientRepositoryException(ClientRepositoryException::exceptionClientExist);
-    }
-    else
-    {
-        if(archived)
-        {
-            archiveClients -> removeClient(client);
-        }
-        currentClients -> addClient(client);
-    }
+    currentClients->create(client);
 }
 
-void ClientManager::removeClient(ClientPtr client)
+void ClientManager::removeClient(const ClientPtr &client)
 {
-    currentClients -> removeClient(client);
-    archiveClients -> addClient(client);
+    currentClients->remove(client);
+    archiveClients->create(client);
 }
 
-int ClientManager::getNumberOfCurrentClients()
+int ClientManager::getNumberOfCurrentClients() const
 {
-    return currentClients -> allClients.size();
+    return currentClients->getRepository().size();
 }
 
-int ClientManager::getNumberOfArchClients()
+int ClientManager::getNumberOfArchClients() const
 {
-    return archiveClients -> allClients.size();
+    return archiveClients->getRepository().size();
 }
 
 

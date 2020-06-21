@@ -8,12 +8,12 @@
 #include "model/vehicleRepositoryException.h"
 
 
-void VehicleRepository::addVehicle(VehiclePtr v)
+void VehicleRepository::create(const VehiclePtr &v)
 {
     if (v == nullptr) throw VehicleRepositoryException(VehicleRepositoryException::exceptionVehicleNullPtr);
     for(const auto &vehicle : vehicleRepository)
     {
-        if(vehicle -> getRegistrationNumber() == v -> getRegistrationNumber())
+        if(*vehicle == *v)
         {
             throw VehicleRepositoryException(VehicleRepositoryException::exceptionVehicleExists);
         }
@@ -21,15 +21,15 @@ void VehicleRepository::addVehicle(VehiclePtr v)
     vehicleRepository.push_back(v);
 }
 
-void VehicleRepository::removeVehicle(VehiclePtr v)
+void VehicleRepository::remove(const VehiclePtr &v)
 {
     if (v == nullptr) throw VehicleRepositoryException(VehicleRepositoryException::exceptionVehicleNullPtr);
-    bool found = (find(vehicleRepository.begin(), vehicleRepository.end(), v) != vehicleRepository.end());
-    if (!found) throw VehicleRepositoryException(VehicleRepositoryException::exceptionVehicleNotFound);
+    if (find_if(vehicleRepository.begin(), vehicleRepository.end(), FindByRegistration((*v).getRegistrationNumber()))  == vehicleRepository.end())
+        throw VehicleRepositoryException(VehicleRepositoryException::exceptionVehicleNotFound);
     vehicleRepository.remove(v);
 }
 
-string VehicleRepository::getVehicle(unsigned int index)
+const VehiclePtr& VehicleRepository::search(const unsigned int &index) const
 {
     if (index > vehicleRepository.size()) throw VehicleRepositoryException(VehicleRepositoryException::exceptionVehicleNotFound);
     unsigned int i = 1;
@@ -38,14 +38,14 @@ string VehicleRepository::getVehicle(unsigned int index)
     {
         if(i == index)
         {
-            chain = v->vehicleInfo();
+            return v;
         }
         i ++;
     }
-    return chain;
+    throw VehicleRepositoryException(VehicleRepositoryException::exceptionVehicleNotFound);
 }
 
-string VehicleRepository::vehicleRaport()
+string VehicleRepository::getAll() const
 {
     ostringstream chain;
     unsigned int i = 1;
@@ -56,5 +56,10 @@ string VehicleRepository::vehicleRaport()
         i++;
     }
     return chain.str();
+}
+
+const list<VehiclePtr>& VehicleRepository::getRepository() const
+{
+    return vehicleRepository;
 }
 

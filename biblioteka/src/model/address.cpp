@@ -4,46 +4,27 @@
 
 #include "model/address.h"
 #include "model/addressException.h"
+#include <sstream>
 
-
-Address::Address(string street_, int houseNumber_)
+Address::Address(const string& street_, const int& houseNumber_)
         : street(street_), houseNumber(houseNumber_)
 {
     if (street.empty()) throw AddressException(AddressException::exceptionStreet);
     if (houseNumber <= 0) throw AddressException(AddressException::exceptionHouseNumber);
 }
 
-void Address::setStreet(string newStreet)
+string Address::getAddress() const
 {
+    ostringstream chain;
+    chain << street << " " << houseNumber;
+    return chain.str();
+}
+
+void Address::setAddress(const string& newStreet, const int& newNumber)
+{
+    if (newStreet.empty()) throw AddressException(AddressException::exceptionStreet);
     street = newStreet;
-    if (street.empty()) throw AddressException(AddressException::exceptionStreet);
+    if (newNumber <= 0) throw AddressException(AddressException::exceptionHouseNumber);
+    houseNumber = newNumber;
 }
 
-void Address::setHouseNumber(int newHouseNumber)
-{
-    houseNumber = newHouseNumber;
-    if (houseNumber <= 0) throw AddressException(AddressException::exceptionHouseNumber);
-}
-
-string Address::getStreet()
-{
-    return street;
-}
-
-int Address::getHouseNumber()
-{
-    return houseNumber;
-}
-
-string Address::getAddress()
-{
-    return getStreet() + " " + to_string(getHouseNumber());
-}
-
-void Address::setAddress(string newStreet, int number)
-{
-    setStreet(newStreet);
-    setHouseNumber(number);
-    if (street.empty()) throw AddressException(AddressException::exceptionStreet);
-    if (houseNumber <= 0) throw AddressException(AddressException::exceptionHouseNumber);
-}

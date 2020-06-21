@@ -1,12 +1,12 @@
 #include "model/moped.h"
 
 
-Moped::Moped(float price, string registrationNumber, float engineDisplacement)
+Moped::Moped(const int& price, const string& registrationNumber, const float& engineDisplacement)
         : MotorVehicle(price, registrationNumber, engineDisplacement)
 {
 }
 
-string Moped::vehicleInfo()
+string Moped::vehicleInfo() const
 {
     string chain;
     chain = "MOPED: " + MotorVehicle::vehicleInfo() + ". Price: " + to_string(getPrice());
