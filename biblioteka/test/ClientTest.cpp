@@ -7,7 +7,13 @@
 #include "model/address.h"
 #include "model/rent.h"
 #include "model/car.h"
+#include "model/bicycle.h"
 #include <boost/test/output_test_stream.hpp>
+#include "master.cpp"
+#include "model/rentsManager.h"
+#include "model/clientGold.h"
+#include "model/clientBronze.h"
+#include "model/clientSilver.h"
 
 using boost::test_tools::output_test_stream;
 
@@ -67,15 +73,109 @@ BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
         BOOST_CHECK_EQUAL(client.getLastName(), "Duuuu");
     }
 
-    BOOST_AUTO_TEST_CASE(ClientAddRentCase)
+    BOOST_AUTO_TEST_CASE(ClientGetDefaultDiscountCase)
     {
-        output_test_stream output1;
-        VehiclePtr v = make_shared<Car>(100, "ABC", 1232, 'A');
         ClientPtr client = make_shared<Client>("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
-        Rent wypozyczenie(client, v);
-        Rent *r = &wypozyczenie;
-        output1 << r->rentInfo()<<endl;
-        BOOST_TEST(output1.is_equal(client->allRents()));
+        float eps = 0.001;
+        BOOST_TEST((*client).getDiscount() - 0 < eps);
     }
 
+    BOOST_AUTO_TEST_CASE(ClientGetDefaultLimitCase)
+    {
+        ClientPtr client = make_shared<Client>("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
+        BOOST_CHECK_EQUAL((*client).getVehicleLimit(), 1);
+    }
+
+    BOOST_AUTO_TEST_CASE(ClientGetBronzeDiscountCase)
+    {
+        ClientPtr client = make_shared<Client>("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
+        ClientTypePtr typeOfClient(new ClientBronze);
+        (*client).setClientType(typeOfClient);
+        float eps = 0.001;
+        BOOST_TEST((*client).getDiscount() - 0.1< eps);
+    }
+
+    BOOST_AUTO_TEST_CASE(ClientGetBronzeLimitCase)
+    {
+        ClientPtr client = make_shared<Client>("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
+        ClientTypePtr typeOfClient(new ClientBronze);
+        (*client).setClientType(typeOfClient);
+        BOOST_CHECK_EQUAL((*client).getVehicleLimit(), 2);
+    }
+
+    BOOST_AUTO_TEST_CASE(ClientGetSilverDiscountCase)
+    {
+        ClientPtr client = make_shared<Client>("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
+        ClientTypePtr typeOfClient(new ClientSilver);
+        (*client).setClientType(typeOfClient);
+        float eps = 0.001;
+        BOOST_TEST((*client).getDiscount() - 0.2 < eps);
+    }
+
+    BOOST_AUTO_TEST_CASE(ClientGetSilverLimitCase)
+    {
+        ClientPtr client = make_shared<Client>("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
+        ClientTypePtr typeOfClient(new ClientSilver);
+        (*client).setClientType(typeOfClient);
+        BOOST_CHECK_EQUAL((*client).getVehicleLimit(), 3);
+    }
+
+    BOOST_AUTO_TEST_CASE(ClientGetGoldDiscountCase)
+    {
+        ClientPtr client = make_shared<Client>("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
+        ClientTypePtr typeOfClient(new ClientGold);
+        (*client).setClientType(typeOfClient);
+        float eps = 0.001;
+        BOOST_TEST((*client).getDiscount() -0.3 < eps);
+    }
+
+    BOOST_AUTO_TEST_CASE(ClientGetGoldLimitCase)
+    {
+        ClientPtr client = make_shared<Client>("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
+        ClientTypePtr typeOfClient(new ClientGold);
+        (*client).setClientType(typeOfClient);
+        BOOST_CHECK_EQUAL((*client).getVehicleLimit(), 4);
+    }
+
+    BOOST_AUTO_TEST_CASE(ClientAddCurrentRentCase)
+    {
+        ClientPtr client = make_shared<Client>("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
+        ClientTypePtr typeOfClient(new ClientGold);
+        VehiclePtr v1 = make_shared<Bicycle>(110, "AB321");
+        VehiclePtr v2 = make_shared<Bicycle>(120, "BG456");
+        VehiclePtr v3 = make_shared<Car>(560, "ERW 52112", 1300, 'A');
+        VehiclePtr v4 = make_shared<Car>(700, "CW 53351", 1600, 'B');
+        VehiclePtr v5 = make_shared<Car>(1000, "GD 22101", 2000, 'C');
+        (*client).setClientType(typeOfClient);
+        RentPtr r1 = make_shared<Rent>(client, v1);
+        RentPtr r2 = make_shared<Rent>(client, v2);
+        RentPtr r3 = make_shared<Rent>(client, v3);
+        (*client).addCurrentRent(r1);
+        (*client).addCurrentRent(r2);
+        (*client).addCurrentRent(r3);
+        BOOST_CHECK_EQUAL((*client).getNumberOfRents(), 3);
+    }
+
+    BOOST_AUTO_TEST_CASE(ClientRemoveArchiveRentCase)
+    {
+        ClientPtr client = make_shared<Client>("Jan", "Kowalski", "1234567890", "adres", 2, "adres2", 5);
+        ClientTypePtr typeOfClient(new ClientGold);
+        VehiclePtr v1 = make_shared<Bicycle>(110, "AB321");
+        VehiclePtr v2 = make_shared<Bicycle>(120, "BG456");
+        VehiclePtr v3 = make_shared<Car>(560, "ERW 52112", 1300, 'A');
+        VehiclePtr v4 = make_shared<Car>(700, "CW 53351", 1600, 'B');
+        VehiclePtr v5 = make_shared<Car>(1000, "GD 22101", 2000, 'C');
+        (*client).setClientType(typeOfClient);
+        RentPtr r1 = make_shared<Rent>(client, v1);
+        RentPtr r2 = make_shared<Rent>(client, v2);
+        RentPtr r3 = make_shared<Rent>(client, v3);
+        (*client).addCurrentRent(r1);
+        (*client).addCurrentRent(r2);
+        (*client).addCurrentRent(r3);
+        (*client).removeArchiveRent(r2);
+        BOOST_CHECK_EQUAL((*client).getNumberOfRents(), 2);
+    }
+
+
 BOOST_AUTO_TEST_SUITE_END()
+

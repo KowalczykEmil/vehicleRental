@@ -5,18 +5,17 @@
 #ifndef clientClass
 #define clientClass
 #include <string>
-#include "model/address.h"
 #include <vector>
-#include "model/rent.h"
+#include <list>
 #include <memory>
 
-
 using namespace std;
-
-
 class Rent;
-typedef unique_ptr<Address> AddressPtr;
-
+class ClientType;
+class Address;
+typedef shared_ptr<Rent> RentPtr;
+typedef shared_ptr<ClientType> ClientTypePtr;
+typedef shared_ptr<Address> AddressPtr;
 
 class Client
 {
@@ -26,11 +25,14 @@ private:
     string personalID;
     AddressPtr address;
     AddressPtr registeredAddress;
-    vector<Rent *> rentVector{};
+    ClientTypePtr clientType;
+    friend class ClientRepository;
+    vector<RentPtr> archivedRents{};
+    list<RentPtr> currentRents{};
+    int balance;
 public:
-    Client(string imie, string nazwisko, string id, string ulica, int nrDomu, string ulica2, int nrDomu2);
+    Client(string, string, string, string, int, string, int);
     Client(const Client &c);
-    ~Client();
     string clientInfo();
     void setLastName(string newLastName);
     void setAddress(Address newAddress);
@@ -40,11 +42,19 @@ public:
     string getPersonalID();
     string getAddress();
     string getRegisteredAddress();
-    void addRent(Rent *);
+    void archiveRent(RentPtr);
     string allRents();
     string getFullName();
+    void setClientType(ClientTypePtr);
+    float getDiscount();
+    int getVehicleLimit();
+    int getNumberOfRents();
+    void addCurrentRent(RentPtr);
+    void removeArchiveRent(RentPtr);
+    int getBalance();
+    void setBalance(RentPtr);
+    int getNumberOfArchRents();
+    vector<RentPtr> getAllClientRents();
 };
-
-typedef shared_ptr<Client> ClientPtr;
 #endif
 

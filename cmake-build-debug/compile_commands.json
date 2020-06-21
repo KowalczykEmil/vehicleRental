@@ -41,13 +41,83 @@
 },
 {
   "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
-  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/currentRentsRepository.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/currentRentsRepository.cpp",
-  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/currentRentsRepository.cpp"
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/rentsRepository.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rentsRepository.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rentsRepository.cpp"
 },
 {
   "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
   "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/vehicleRepository.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleRepository.cpp",
   "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleRepository.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/clientBronze.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientBronze.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientBronze.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/clientSilver.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientSilver.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientSilver.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/clientGold.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientGold.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientGold.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/clientRepository.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientRepository.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientRepository.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/rentsManager.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rentsManager.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rentsManager.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/clientException.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientException.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientException.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/vehicleException.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleException.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleException.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/rentException.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rentException.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rentException.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/addressException.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/addressException.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/addressException.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/clientRepositoryException.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientRepositoryException.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientRepositoryException.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/rentsRepositoryException.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rentsRepositoryException.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rentsRepositoryException.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/vehicleRepositoryException.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleRepositoryException.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleRepositoryException.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/clientManager.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientManager.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientManager.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/Biblioteka.dir/src/model/vehicleManager.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleManager.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleManager.cpp"
 },
 {
   "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
@@ -86,13 +156,38 @@
 },
 {
   "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
-  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/CurrentRentsRepositoryTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/CurrentRentsRepositoryTest.cpp",
-  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/CurrentRentsRepositoryTest.cpp"
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/RentsRepositoryTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/RentsRepositoryTest.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/RentsRepositoryTest.cpp"
 },
 {
   "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
   "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/VehicleRepositoryTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/VehicleRepositoryTest.cpp",
   "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/VehicleRepositoryTest.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/ClientRepositoryTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/ClientRepositoryTest.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/ClientRepositoryTest.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/RentsManagerTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/RentsManagerTest.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/RentsManagerTest.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/ExceptionTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/ExceptionTest.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/ExceptionTest.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/VehicleManagerTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/VehicleManagerTest.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/VehicleManagerTest.cpp"
+},
+{
+  "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka",
+  "command": "/usr/bin/g++   -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include  -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11 -o CMakeFiles/TestBibl.dir/test/ClientManagerTest.cpp.o -c /home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/ClientManagerTest.cpp",
+  "file": "/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/ClientManagerTest.cpp"
 },
 {
   "directory": "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program",

@@ -8,7 +8,6 @@
 //#define address
 #include <string>
 
-
 using namespace std;
 
 class Address
@@ -17,7 +16,7 @@ private:
     string street;
     int houseNumber;
 public:
-    Address(string ulica, int numerDomu);
+    Address(string, int);
     void setStreet(string newStreet);
     void setHouseNumber(int newHouseNumber);
     string getStreet();

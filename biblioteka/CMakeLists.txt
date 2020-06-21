@@ -10,8 +10,22 @@ set(SOURCE_FILES
         src/model/car.cpp
         src/model/moped.cpp
         src/model/bicycle.cpp
-        src/model/currentRentsRepository.cpp
+        src/model/rentsRepository.cpp
         src/model/vehicleRepository.cpp
+        src/model/clientBronze.cpp
+        src/model/clientSilver.cpp
+        src/model/clientGold.cpp
+        src/model/clientRepository.cpp
+        src/model/rentsManager.cpp
+        src/model/clientException.cpp
+        src/model/vehicleException.cpp
+        src/model/rentException.cpp
+        src/model/addressException.cpp
+        src/model/clientRepositoryException.cpp
+        src/model/rentsRepositoryException.cpp
+        src/model/vehicleRepositoryException.cpp
+        src/model/clientManager.cpp
+        src/model/vehicleManager.cpp
         )
 #utwórz bibliotekę typu STATIC, SHARED albo MODULE ze wskazanych źródeł
 add_library(Biblioteka ${SOURCE_FILES})
@@ -33,8 +47,13 @@ set(SOURCE_TEST_FILES
         test/BicycleTest.cpp
         test/CarTest.cpp
         test/MopedTest.cpp
-        test/CurrentRentsRepositoryTest.cpp
+        test/RentsRepositoryTest.cpp
         test/VehicleRepositoryTest.cpp
+        test/ClientRepositoryTest.cpp
+        test/RentsManagerTest.cpp
+        test/ExceptionTest.cpp
+        test/VehicleManagerTest.cpp
+        test/ClientManagerTest.cpp
         )
 
 add_executable (TestBibl ${SOURCE_TEST_FILES})

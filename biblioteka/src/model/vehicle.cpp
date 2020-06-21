@@ -3,14 +3,13 @@
 //
 
 #include "model/vehicle.h"
+#include "model/vehicleException.h"
 
 
-Vehicle::Vehicle(float cena, string nrRejestracja): price(cena), registrationNumber(nrRejestracja)
+Vehicle::Vehicle(float price_, string registrationNumber_): price(price_), registrationNumber(registrationNumber_)
 {
-}
-
-Vehicle::~Vehicle()
-{
+    if (price <= 0) throw VehicleException(VehicleException::exceptionPrice);
+    if (registrationNumber.empty()) throw VehicleException(VehicleException::exceptionRegistration);
 }
 
 string Vehicle::vehicleInfo()

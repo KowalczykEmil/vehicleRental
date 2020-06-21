@@ -14,7 +14,7 @@ private:
     char segment;
     float getWage();
 public:
-    Car(float price, string registrationNumber, float engineDisplacement, char seg);
+    Car(float, string, float, char);
     string vehicleInfo() override;
     float getPrice() override;
 };

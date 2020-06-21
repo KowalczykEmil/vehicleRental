@@ -4,8 +4,6 @@
 #ifndef POBIPROJECT_VEHICLE_H
 #define POBIPROJECT_VEHICLE_H
 #include <string>
-#include <memory>
-
 
 using namespace std;
 
@@ -16,11 +14,10 @@ private:
     string registrationNumber;
 public:
     Vehicle(float price, string registrationNumber);
-    virtual ~Vehicle();
+    virtual ~Vehicle()= default;
     virtual string vehicleInfo();
     virtual float getPrice();
     string getRegistrationNumber();
 };
-typedef shared_ptr<Vehicle> VehiclePtr;
 
 #endif //POBIPROJECT_VEHICLE_H
