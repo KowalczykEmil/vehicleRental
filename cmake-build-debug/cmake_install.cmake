@@ -1,4 +1,4 @@
-# Install script for directory: /home/student/Nowe/pobiz_mkwa_ni_08
+# Install script for directory: /home/student/Pulpit/katalog/pobiz_mkwa_ni_08
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/cmake_install.cmake")
-  include("/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program/cmake_install.cmake")
+  include("/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/cmake_install.cmake")
+  include("/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/program/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

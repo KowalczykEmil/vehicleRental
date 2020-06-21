@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -Wpedantic -Wextra -Weffc++ -g3 -gdwarf-4   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/student/Nowe/pobiz_mkwa_ni_08/program/include -I/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include 
+CXX_INCLUDES = -I/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/program/include -I/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/include 
 

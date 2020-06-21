@@ -8,63 +8,63 @@
 		<Option virtualFolders="CMake Files\;CMake Files\biblioteka\;CMake Files\program\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug"/>
+				<Option working_dir="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug"/>
+				<Option working_dir="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test">
-				<Option working_dir="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug"/>
+				<Option working_dir="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug"/>
+				<Option working_dir="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="check">
-				<Option working_dir="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka"/>
+				<Option working_dir="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 check"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 check"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Biblioteka">
-				<Option output="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/libBiblioteka.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka"/>
+				<Option output="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/libBiblioteka.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include"/>
+					<Add directory="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/include"/>
 					<Add directory="/usr/include/c++/8"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
 					<Add directory="/usr/include/c++/8/backward"/>
@@ -75,20 +75,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 Biblioteka"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 Biblioteka"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Biblioteka/fast">
-				<Option output="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/libBiblioteka.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka"/>
+				<Option output="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/libBiblioteka.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include"/>
+					<Add directory="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/include"/>
 					<Add directory="/usr/include/c++/8"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
 					<Add directory="/usr/include/c++/8/backward"/>
@@ -99,20 +99,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 Biblioteka/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 Biblioteka/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TestBibl">
-				<Option output="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/TestBibl" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka"/>
+				<Option output="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/TestBibl" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include"/>
+					<Add directory="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/include"/>
 					<Add directory="/usr/include/c++/8"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
 					<Add directory="/usr/include/c++/8/backward"/>
@@ -123,20 +123,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 TestBibl"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 TestBibl"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TestBibl/fast">
-				<Option output="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/TestBibl" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka"/>
+				<Option output="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/TestBibl" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include"/>
+					<Add directory="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/include"/>
 					<Add directory="/usr/include/c++/8"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
 					<Add directory="/usr/include/c++/8/backward"/>
@@ -147,21 +147,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 TestBibl/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 TestBibl/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/biblioteka/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Program">
-				<Option output="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program/Program" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program"/>
+				<Option output="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/program/Program" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/program"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/student/Nowe/pobiz_mkwa_ni_08/program/include"/>
-					<Add directory="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include"/>
+					<Add directory="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/program/include"/>
+					<Add directory="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/include"/>
 					<Add directory="/usr/include/c++/8"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
 					<Add directory="/usr/include/c++/8/backward"/>
@@ -172,21 +172,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 Program"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 Program"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Program/fast">
-				<Option output="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program/Program" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program"/>
+				<Option output="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/program/Program" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/program"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/student/Nowe/pobiz_mkwa_ni_08/program/include"/>
-					<Add directory="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/include"/>
+					<Add directory="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/program/include"/>
+					<Add directory="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/include"/>
 					<Add directory="/usr/include/c++/8"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
 					<Add directory="/usr/include/c++/8/backward"/>
@@ -197,137 +197,137 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 Program/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Nowe/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 Program/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/cmake-build-debug/program/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/address.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/address.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/addressException.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/addressException.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/bicycle.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/bicycle.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/car.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/car.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/client.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/client.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientBronze.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/clientBronze.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientException.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/clientException.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientGold.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/clientGold.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientManager.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/clientManager.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientRepository.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/clientRepository.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientRepositoryException.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/clientRepositoryException.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/clientSilver.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/clientSilver.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/moped.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/moped.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/motorVehicle.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/motorVehicle.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rent.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/rent.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rentException.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/rentException.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rentsManager.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/rentsManager.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rentsRepository.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/rentsRepository.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/rentsRepositoryException.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/rentsRepositoryException.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicle.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/vehicle.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleException.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleException.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleManager.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleManager.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleRepository.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleRepository.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleRepositoryException.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/src/model/vehicleRepositoryException.cpp">
 			<Option target="Biblioteka"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/AddressTest.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/AddressTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/BicycleTest.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/BicycleTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/CarTest.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/CarTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/ClientManagerTest.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/ClientManagerTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/ClientRepositoryTest.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/ClientRepositoryTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/ClientTest.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/ClientTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/ExceptionTest.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/ExceptionTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/MopedTest.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/MopedTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/RentTest.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/RentTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/RentsManagerTest.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/RentsManagerTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/RentsRepositoryTest.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/RentsRepositoryTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/VehicleManagerTest.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/VehicleManagerTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/VehicleRepositoryTest.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/VehicleRepositoryTest.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/test/master.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/test/master.cpp">
 			<Option target="TestBibl"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/program/src/main.cpp">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/program/src/main.cpp">
 			<Option target="Program"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/CMakeLists.txt">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/biblioteka/CMakeLists.txt">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/biblioteka/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\biblioteka\"/>
 		</Unit>
-		<Unit filename="/home/student/Nowe/pobiz_mkwa_ni_08/program/CMakeLists.txt">
+		<Unit filename="/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/program/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\program\"/>
 		</Unit>
 	</Project>
