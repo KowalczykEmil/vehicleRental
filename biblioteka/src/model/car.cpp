@@ -4,19 +4,19 @@
 #include "model/car.h"
 
 
-Car::Car(float price, string registrationNumber, float engineDisplacement, char segment_)
+Car::Car(const int& price, const string& registrationNumber, const float& engineDisplacement, const char& segment_)
         : MotorVehicle(price, registrationNumber, engineDisplacement), segment(segment_)
 {
 }
 
-string Car::vehicleInfo()
+string Car::vehicleInfo() const
 {
     string chain;
     chain = "CAR: " + MotorVehicle::vehicleInfo() + ". Price: " + to_string(getPrice()) + ". Car class: " + segment;
     return chain;
 }
 
-float Car::getWage()
+double Car::getWage() const
 {
     float wage = 0;
     if(segment == 'A')
@@ -42,10 +42,11 @@ float Car::getWage()
     return wage;
 }
 
-float Car::getPrice()
+int Car::getPrice() const
 {
     return MotorVehicle::getPrice() * getWage();
 }
+
 
 
 

@@ -27,22 +27,30 @@ string
 -
 memory
 -
+model/repository.h
+../biblioteka/include/model/model/repository.h
 
 ../biblioteka/include/model/clientType.h
 string
 -
 
-/home/student/Nowe/pobiz_mkwa_ni_08/program/src/main.cpp
+../biblioteka/include/model/repository.h
+memory
+-
+string
+-
+list
+-
+
+/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/program/src/main.cpp
 iostream
 -
 model/client.h
-/home/student/Nowe/pobiz_mkwa_ni_08/program/src/model/client.h
-memory
--
+/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/program/src/model/client.h
 model/clientType.h
-/home/student/Nowe/pobiz_mkwa_ni_08/program/src/model/clientType.h
+/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/program/src/model/clientType.h
 model/clientRepository.h
-/home/student/Nowe/pobiz_mkwa_ni_08/program/src/model/clientRepository.h
+/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/program/src/model/clientRepository.h
 model/clientGold.h
-/home/student/Nowe/pobiz_mkwa_ni_08/program/src/model/clientGold.h
+/home/student/Pulpit/katalog/pobiz_mkwa_ni_08/program/src/model/clientGold.h
 

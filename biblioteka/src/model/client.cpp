@@ -9,7 +9,7 @@
 #include "model/clientException.h"
 
 
-Client::Client(string firstName_, string lastName_, string personalID_, string street_, int houseNumber_, string street__, int houseNumber__)
+Client::Client(const string& firstName_, const string& lastName_, const string& personalID_, const string& street_, const int& houseNumber_, const string& street__, const int& houseNumber__)
         :firstName(firstName_), lastName(lastName_), personalID(personalID_), address(new Address(street_, houseNumber_)), registeredAddress(new Address(street__, houseNumber__)),
          clientType(nullptr), balance(0)
 {
@@ -26,7 +26,7 @@ Client::Client(const Client &c)
 {
 }
 
-string Client::clientInfo()
+string Client::clientInfo() const
 {
     ostringstream chain;
     int margin = 20;
@@ -50,62 +50,43 @@ string Client::clientInfo()
     return chain.str();
 }
 
-void Client::setLastName(string newLastName)
+void Client::setLastName(const string& newLastName)
 {
     if (newLastName.empty()) throw ClientException(ClientException::exceptionLastName);
     lastName = newLastName;
 }
 
-void Client::setAddress(Address newAddress)
+void Client::setAddress(const string& street, const int& number)
 {
-    *address = newAddress;
-    address->setStreet(address->getStreet());
-    address->setHouseNumber(address->getHouseNumber());
+    address->setAddress(street, number);
 }
 
-void Client::setRegisteredAddress(Address newAddress)
+void Client::setRegisteredAddress(const string& street, const int& number)
 {
-    *registeredAddress = newAddress;
-    registeredAddress->setStreet(registeredAddress->getStreet());
-    registeredAddress->setHouseNumber(registeredAddress->getHouseNumber());
+    registeredAddress->setAddress(street, number);
 }
 
-
-string Client::getFirstName()
-{
-    return firstName;
-}
-
-string Client::getLastName()
-{
-    return lastName;
-}
-
-string Client::getPersonalID()
+const string& Client::getPersonalID() const
 {
     return personalID;
 }
 
-string Client::getAddress()
+string Client::getAddress() const
 {
-    string adres;
-    adres = address->getStreet() + " " + to_string(address->getHouseNumber());
-    return adres;
+    return address -> getAddress();
 }
 
-string Client::getRegisteredAddress()
+string Client::getRegisteredAddress() const
 {
-    string adres;
-    adres = registeredAddress->getStreet() + " " + to_string(registeredAddress->getHouseNumber());
-    return adres;
+    return registeredAddress -> getAddress();
 }
 
-void Client::archiveRent(RentPtr r)
+void Client::archiveRent(const RentPtr &r)
 {
     archivedRents.push_back(r);
 }
 
-string Client::allRents()
+string Client::allRents() const
 {
     ostringstream chain;
     for (const auto &rent : currentRents)
@@ -119,17 +100,17 @@ string Client::allRents()
     return chain.str();
 }
 
-string Client::getFullName()
+string Client::getFullName() const
 {
     return firstName + " " + lastName;
 }
 
-void Client::setClientType(ClientTypePtr typeOfClient)
+void Client::setClientType(const ClientTypePtr &typeOfClient)
 {
     clientType = ClientTypePtr(typeOfClient);
 }
 
-float Client::getDiscount()
+float Client::getDiscount() const
 {
     if (clientType == nullptr)
     {
@@ -138,7 +119,7 @@ float Client::getDiscount()
     return clientType->discount();
 }
 
-int Client::getVehicleLimit()
+int Client::getVehicleLimit() const
 {
     if (clientType == nullptr)
     {
@@ -147,40 +128,57 @@ int Client::getVehicleLimit()
     return clientType->vehicleLimit();
 }
 
-void Client::addCurrentRent(RentPtr r)
+void Client::addCurrentRent(const RentPtr &r)
 {
     currentRents.push_back(r);
 }
 
-void Client::removeArchiveRent(RentPtr r)
+void Client::removeArchiveRent(const RentPtr &r)
 {
     currentRents.remove(r);
     archiveRent(r);
     setBalance(r);
 }
 
-int Client::getNumberOfRents()
+int Client::getNumberOfRents() const
 {
     return currentRents.size();
 }
 
-int Client::getBalance()
+const int& Client::getBalance() const
 {
     return balance;
 }
 
-void Client::setBalance(RentPtr r)
+void Client::setBalance(const RentPtr &r)
 {
     balance += r -> getTotalPrice();
 }
 
-int Client::getNumberOfArchRents()
+int Client::getNumberOfArchRents() const
 {
     return archivedRents.size();
 }
 
-vector<RentPtr> Client::getAllClientRents()
+const vector<RentPtr>& Client::getAllClientRents() const
 {
-    vector<RentPtr> v{ begin(archivedRents), end(archivedRents) };
-    return v;
+    return archivedRents;
+}
+
+const ClientTypePtr& Client::getClientType() const
+{
+    return clientType;
+}
+
+bool Client::operator== (const Client &c) const
+{
+    return c.personalID == personalID;
+}
+
+FindByPersonalID::FindByPersonalID(const string &id) : personalID(id)
+{}
+
+bool FindByPersonalID::operator()(const ClientPtr &c) const
+{
+    return (*c).getPersonalID() == personalID;
 }

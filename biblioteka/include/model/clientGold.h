@@ -14,4 +14,5 @@ public:
     string getType() override;
 };
 
+
 #endif //POBIPROJECT_CLIENTGOLD_H

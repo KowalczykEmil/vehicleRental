@@ -12,13 +12,13 @@ class MotorVehicle : public Vehicle
 {
 private:
     float engineDisplacement;
-    float getWage();
+    double getWage() const;
 public:
-    MotorVehicle(float price, string registrationNumber, float engineCapacity);
+    MotorVehicle(const int&, const string&, const float&);
     virtual ~MotorVehicle()= default;
-    float getEngineDisplacement();
-    string vehicleInfo() override;
-    float getPrice() override;
+    const float& getEngineDisplacement() const;
+    string vehicleInfo() const override;
+    int getPrice() const override;
 };
 
 #endif //POBIPROJECT_MOTORVEHICLE_H

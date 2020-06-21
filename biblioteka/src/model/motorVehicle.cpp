@@ -4,26 +4,26 @@
 #include "model/motorVehicle.h"
 
 
-MotorVehicle::MotorVehicle(float price, string registrationNumber, float engineCapacity)
+MotorVehicle::MotorVehicle(const int& price, const string& registrationNumber, const float& engineCapacity)
         : Vehicle(price, registrationNumber), engineDisplacement(engineCapacity)
 {
 }
 
-float MotorVehicle::getEngineDisplacement()
+const float& MotorVehicle::getEngineDisplacement() const
 {
     return engineDisplacement;
 }
 
-string MotorVehicle::vehicleInfo()
+string MotorVehicle::vehicleInfo() const
 {
     string chain;
     chain = Vehicle::vehicleInfo() + ". Engine displacement: " + to_string(engineDisplacement);
     return chain;
 }
 
-float MotorVehicle::getWage()
+double MotorVehicle::getWage() const
 {
-    float wage = 0;
+    double wage = 0;
     if (engineDisplacement < 1000)
     {
         wage = 1;
@@ -39,8 +39,9 @@ float MotorVehicle::getWage()
     return wage;
 }
 
-float MotorVehicle::getPrice()
+int MotorVehicle::getPrice() const
 {
     return Vehicle::getPrice() * getWage();
 }
+
 

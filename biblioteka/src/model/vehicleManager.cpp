@@ -3,66 +3,50 @@
 //
 
 #include "model/vehicleManager.h"
-#include "model/clientGold.h"
 #include "model/rent.h"
 #include "model/vehicleRepository.h"
 #include "model/vehicle.h"
-#include "model/client.h"
 #include "model/vehicleRepositoryException.h"
 
 
 VehicleManager::VehicleManager()
         : currentVehicles(new VehicleRepository), archiveVehicles(new VehicleRepository)
-{
-}
+{}
 
-void VehicleManager::addVehicle(VehiclePtr vehicle)
+void VehicleManager::addVehicle(const VehiclePtr &vehicle)
 {
-    bool exists = false;
-    bool archived = false;
-    for(const auto& v : currentVehicles->vehicleRepository)
+    for(const auto& v : currentVehicles->getRepository())
     {
-        if(vehicle -> getRegistrationNumber() == v->getRegistrationNumber())
+        if(*vehicle == *v)
         {
-            exists = true;
+            throw VehicleRepositoryException(VehicleRepositoryException::exceptionVehicleExists);
+        }
+    }
+    for(const auto& v : archiveVehicles->getRepository())
+    {
+        if(*vehicle == *v)
+        {
+            archiveVehicles->remove(vehicle);
             break;
         }
     }
-    for(const auto& v : archiveVehicles->vehicleRepository)
-    {
-        if(vehicle->getRegistrationNumber() == v->getRegistrationNumber())
-        {
-            archived = true;
-            break;
-        }
-    }
-    if(exists)
-    {
-        throw VehicleRepositoryException(VehicleRepositoryException::exceptionVehicleExists);
-    }
-    else
-    {
-        if(archived)
-        {
-            archiveVehicles -> removeVehicle(vehicle);
-        }
-        currentVehicles -> addVehicle(vehicle);
-    }
+    currentVehicles->create(vehicle);
 }
 
-void VehicleManager::removeVehicle(VehiclePtr vehicle)
+void VehicleManager::removeVehicle(const VehiclePtr &vehicle)
 {
-    currentVehicles -> removeVehicle(vehicle);
-    archiveVehicles -> addVehicle(vehicle);
+    currentVehicles->remove(vehicle);
+    archiveVehicles->create(vehicle);
 }
 
-int VehicleManager::getNumberOfCurrentVehicles()
+int VehicleManager::getNumberOfCurrentVehicles() const
 {
-    return currentVehicles -> vehicleRepository.size();
+    return currentVehicles->getRepository().size();
 }
 
-int VehicleManager::getNumberOfArchVehicles()
+int VehicleManager::getNumberOfArchVehicles() const
 {
-    return archiveVehicles -> vehicleRepository.size();
+    return archiveVehicles->getRepository().size();
 }
+
 

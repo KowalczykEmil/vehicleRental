@@ -6,7 +6,6 @@
 #include "model/clientBronze.h"
 #include "model/clientSilver.h"
 #include "model/rent.h"
-#include "model/clientRepository.h"
 #include "model/vehicle.h"
 #include "model/client.h"
 #include "model/rentsRepository.h"
@@ -14,75 +13,67 @@
 
 
 RentsManager::RentsManager()
-        : currentRents(new RentsRepository), archiveRents(new RentsRepository), clientRepository(new ClientRepository)
+        : currentRents(new RentsRepository), archiveRents(new RentsRepository)
 {
 }
 
-void RentsManager::rentVehicle(RentPtr r)
+void RentsManager::rentVehicle(const RentPtr &r)
 {
-    bool found = (find(currentRents -> rentRepositoryList.begin(), currentRents -> rentRepositoryList.end(), r) != currentRents -> rentRepositoryList.end());
+    bool found = (find(currentRents->getRepository().begin(), currentRents->getRepository().end(), r) !=
+                  currentRents->getRepository().end());
     if (found) throw RentsRepositoryException(RentsRepositoryException::exceptionVehicleRented);
-    bool isRented = false;
-    for(const auto& rent : currentRents->rentRepositoryList)
+    for(const auto& rent : currentRents->getRepository())
     {
-        if(r->vehicle->getRegistrationNumber() == rent->vehicle->getRegistrationNumber())
-        {
-            isRented = true;
-            break;
-        }
-    }
-    if(!isRented and r -> client -> getNumberOfRents() < r -> client -> getVehicleLimit())
-    {
-        currentRents -> createRent(r);
-        r -> client -> addCurrentRent(r);
-    }
-    else
-    {
-        if(!isRented)
-        {
-            throw RentsRepositoryException(RentsRepositoryException::exceptionLimitExceeded);
-        }
-        else
+        if(r->getRegistrationNumber() == rent->getRegistrationNumber())
         {
             throw RentsRepositoryException(RentsRepositoryException::exceptionVehicleRented);
         }
     }
+    if(r -> getClient() -> getNumberOfRents() < r -> getClient() -> getVehicleLimit())
+    {
+        currentRents->create(r);
+        r -> getClient() -> addCurrentRent(r);
+    }
+    else
+    {
+        throw RentsRepositoryException(RentsRepositoryException::exceptionLimitExceeded);
+    }
 }
 
-void RentsManager::returnVehicle(RentPtr r)
+void RentsManager::returnVehicle(const RentPtr &r)
 {
-    r -> client -> removeArchiveRent(r);
     r -> endRent();
-    currentRents -> removeRent(r);
-    archiveRents -> createRent(r);
-    changeClientType(r -> client);
+    r -> getClient() -> removeArchiveRent(r);
+    currentRents->remove(r);
+    archiveRents->create(r);
+    changeClientType(r -> getClient());
 }
 
-string RentsManager::getClientForRentedVehicle(shared_ptr<Vehicle> v)
+string RentsManager::getClientForRentedVehicle(const VehiclePtr &v) const
 {
     string clientInfo;
-    for(const auto& rent : currentRents->rentRepositoryList)
+    for(const auto& rent : currentRents->getRepository())
     {
-        if(rent->vehicle == v)
+        if(rent->getRegistrationNumber() == v -> getRegistrationNumber())
         {
-            clientInfo = rent->client->clientInfo();
+            clientInfo = rent -> getClient() -> clientInfo();
             break;
         }
     }
     return clientInfo;
 }
 
-int RentsManager::getNumberOfCurrentRents()
+int RentsManager::getNumberOfCurrentRents() const
 {
-    return currentRents -> rentRepositoryList.size();
+    return currentRents->getRepository().size();
 }
 
-int RentsManager::getNumberOfArchRents()
+int RentsManager::getNumberOfArchRents() const
 {
-    return archiveRents -> rentRepositoryList.size();
+    return archiveRents->getRepository().size();
 }
 
-void RentsManager::changeClientType(ClientPtr client)
+void RentsManager::changeClientType(const ClientPtr &client)
 {
     if(client -> getDiscount() != 0.3)
     {
@@ -90,27 +81,27 @@ void RentsManager::changeClientType(ClientPtr client)
         if (b >= 1000 and b < 3000)
         {
             ClientTypePtr bronze = make_shared<ClientBronze>();
-            clientRepository -> changeType(client, bronze);
+            client -> setClientType(bronze);
         }
         else if (b >= 3000 and b < 10000)
         {
             ClientTypePtr silver = make_shared<ClientSilver>();
-            clientRepository -> changeType(client, silver);
+            client -> setClientType(silver);
         }
         else if (b >= 10000)
         {
             ClientTypePtr gold = make_shared<ClientGold>();
-            clientRepository -> changeType(client, gold);
+            client -> setClientType(gold);
         }
     }
 }
 
-int RentsManager::checkClientRentBalance(ClientPtr client)
+int RentsManager::checkClientRentBalance(const ClientPtr &client) const
 {
     return client -> getBalance();
 }
 
-vector<RentPtr> RentsManager::getAllClientRents(ClientPtr client)
+const vector<RentPtr>& RentsManager::getAllClientRents(const ClientPtr &client) const
 {
     return client -> getAllClientRents();
 }

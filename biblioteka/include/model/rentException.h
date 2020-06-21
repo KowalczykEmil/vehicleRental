@@ -17,4 +17,5 @@ public:
     static const string exceptionDays;
     static const string exceptionRentalPeriod;
 };
+
 #endif //POBIPROJECT_RENTEXCEPTION_H

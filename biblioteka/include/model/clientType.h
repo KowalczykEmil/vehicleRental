@@ -16,4 +16,5 @@ public:
     virtual ~ClientType()= default;
     virtual string getType()=0;
 };
+
 #endif //POBIPROJECT_CLIENTTYPE_H

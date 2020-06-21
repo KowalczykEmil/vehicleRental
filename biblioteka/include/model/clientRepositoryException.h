@@ -16,4 +16,5 @@ public:
     static const string exceptionClientNullPtr;
     static const string exceptionClientExist;
 };
+
 #endif //POBIPROJECT_CLIENTREPOSITORYEXCEPTION_H

@@ -36,8 +36,8 @@ BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
         ClientPtr client = make_shared<Client>("Emil", "Kowalczyk", "123", "Zwolinskiego", 8, "Lowicka", 13);
         ClientPtr client2 = make_shared<Client>("Em2l", "Kowks", "123", "Zwolinskiego", 8, "Lowicka", 13);
         ClientRepository r;
-        r.addClient(client);
-        BOOST_REQUIRE_THROW(r.addClient(client2), logic_error);
+        r.create(client);
+        BOOST_REQUIRE_THROW(r.create(client2), logic_error);
     }
 
     BOOST_AUTO_TEST_CASE(VehicleSameRegExceptionCase)
@@ -45,8 +45,8 @@ BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
         VehiclePtr pojazd = make_shared<Vehicle>(1010.2, "5Y80");
         VehiclePtr pojazd2 = make_shared<Vehicle>(10210.2, "5Y80");
         VehicleRepository v;
-        v.addVehicle(pojazd);
-        BOOST_REQUIRE_THROW(v.addVehicle(pojazd2), logic_error);
+        v.create(pojazd);
+        BOOST_REQUIRE_THROW(v.create(pojazd2), logic_error);
     }
 
     BOOST_AUTO_TEST_CASE(AddressExceptionCase)
@@ -91,9 +91,9 @@ BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
         ClientRepository repozytorium;
         for(const auto& client : tablica)
         {
-            repozytorium.addClient(client);
+            repozytorium.create(client);
         }
-        BOOST_REQUIRE_EQUAL(repozytorium.getNumberOfClients(), 10);
+        BOOST_REQUIRE_EQUAL(repozytorium.getRepository().size(), 10);
     }
 
 

@@ -22,17 +22,16 @@ typedef shared_ptr<Vehicle> VehiclePtr;
 class RentsManager{
     shared_ptr<RentsRepository> currentRents;
     shared_ptr<RentsRepository> archiveRents;
-    ClientRepoPtr clientRepository;
 public:
     RentsManager();
-    void returnVehicle(RentPtr);
-    void rentVehicle(RentPtr);
-    vector<RentPtr> getAllClientRents(ClientPtr);
-    string getClientForRentedVehicle(VehiclePtr);
-    int getNumberOfCurrentRents();
-    int getNumberOfArchRents();
-    void changeClientType(ClientPtr);
-    int checkClientRentBalance(ClientPtr);
+    void returnVehicle(const RentPtr&);
+    void rentVehicle(const RentPtr&);
+    const vector<RentPtr>& getAllClientRents(const ClientPtr&) const;
+    string getClientForRentedVehicle(const VehiclePtr&) const;
+    int getNumberOfCurrentRents() const;
+    int getNumberOfArchRents() const;
+    void changeClientType(const ClientPtr&);
+    int checkClientRentBalance(const ClientPtr&) const;
 };
 
 #endif //POBIPROJECT_RENTSMENAGER_H

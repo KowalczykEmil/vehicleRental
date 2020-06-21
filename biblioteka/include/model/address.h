@@ -16,13 +16,9 @@ private:
     string street;
     int houseNumber;
 public:
-    Address(string, int);
-    void setStreet(string newStreet);
-    void setHouseNumber(int newHouseNumber);
-    string getStreet();
-    int getHouseNumber();
-    string getAddress();
-    void setAddress(string, int);
+    Address(const string&, const int&);
+    string getAddress() const;
+    void setAddress(const string&, const int&);
 };
 
 #endif //POBIPROJECT_ADDRESS_H

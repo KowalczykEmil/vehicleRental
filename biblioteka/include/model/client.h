@@ -26,35 +26,44 @@ private:
     AddressPtr address;
     AddressPtr registeredAddress;
     ClientTypePtr clientType;
-    friend class ClientRepository;
     vector<RentPtr> archivedRents{};
     list<RentPtr> currentRents{};
     int balance;
 public:
-    Client(string, string, string, string, int, string, int);
+    Client(const string&, const string&, const string&, const string&, const int&, const string&, const int&);
     Client(const Client &c);
-    string clientInfo();
-    void setLastName(string newLastName);
-    void setAddress(Address newAddress);
-    void setRegisteredAddress(Address newAddress);
-    string getFirstName();
-    string getLastName();
-    string getPersonalID();
-    string getAddress();
-    string getRegisteredAddress();
-    void archiveRent(RentPtr);
-    string allRents();
-    string getFullName();
-    void setClientType(ClientTypePtr);
-    float getDiscount();
-    int getVehicleLimit();
-    int getNumberOfRents();
-    void addCurrentRent(RentPtr);
-    void removeArchiveRent(RentPtr);
-    int getBalance();
-    void setBalance(RentPtr);
-    int getNumberOfArchRents();
-    vector<RentPtr> getAllClientRents();
+    string clientInfo() const;
+    void setLastName(const string&);
+    void setAddress(const string&, const int&);
+    void setRegisteredAddress(const string&, const int&);
+    const string& getPersonalID() const;
+    string getAddress() const;
+    string getRegisteredAddress() const;
+    void archiveRent(const RentPtr&);
+    string allRents() const;
+    string getFullName() const;
+    void setClientType(const ClientTypePtr&);
+    float getDiscount() const;
+    int getVehicleLimit() const;
+    int getNumberOfRents() const;
+    void addCurrentRent(const RentPtr&);
+    void removeArchiveRent(const RentPtr&);
+    const int& getBalance() const;
+    void setBalance(const RentPtr&);
+    int getNumberOfArchRents() const;
+    const vector<RentPtr>& getAllClientRents() const;
+    const ClientTypePtr& getClientType() const;
+    bool operator== (const Client&) const;
 };
+
+typedef shared_ptr<Client> ClientPtr;
+
+struct FindByPersonalID
+{
+    string personalID;
+    explicit FindByPersonalID(const string&);
+    bool operator()(const ClientPtr&) const;
+};
+
 #endif
 

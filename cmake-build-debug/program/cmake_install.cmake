@@ -1,4 +1,4 @@
-# Install script for directory: /home/student/Nowe/pobiz_mkwa_ni_08/program
+# Install script for directory: /home/student/Pulpit/katalog/pobiz_mkwa_ni_08/program
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

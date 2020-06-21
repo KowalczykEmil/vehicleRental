@@ -12,6 +12,7 @@
 #include "model/clientSilver.h"
 #include "model/rent.h"
 #include <string>
+#include <iostream>
 
 using boost::test_tools::output_test_stream;
 
@@ -137,7 +138,7 @@ BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
         m.returnVehicle(r1);
         m.rentVehicle(r2);
         m.returnVehicle(r2);
-        BOOST_CHECK_EQUAL(m.checkClientRentBalance(client), 3123);
+        BOOST_CHECK_EQUAL(m.checkClientRentBalance(client), 3121);
     }
     BOOST_AUTO_TEST_CASE(ManagerClientGetAllArchivedRentsCase)
     {

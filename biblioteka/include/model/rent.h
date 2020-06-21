@@ -25,27 +25,33 @@ private:
     uuid ID;
     local_date_time *rentDateTime;
     local_date_time *endDateTime;
-    float totalPrice;
+    int totalPrice;
     VehiclePtr vehicle;
     ClientPtr client;
-    int rentalLength;
-    friend class RentsManager;
 public:
-    Rent(ClientPtr, VehiclePtr, int=0);
-    Rent(const Rent &r);
+    Rent(const ClientPtr&, const VehiclePtr&, int=0);
+    Rent(const Rent&);
     Rent& operator= (const Rent&) = default;
     ~Rent();
-    string rentInfo();
+    string rentInfo() const;
     void endRent();
-    int getPeriod();
-    float getPrice();
-    string getClient();
-    string getVehicleRented();
-    local_date_time getRentDate();
-    local_date_time getEndDate();
-    int getRentalLength();
-    int getTotalPrice();
-    uuid getID();
+    int getPeriod() const;
+    const int& getTotalPrice() const;
+    const ClientPtr& getClient() const;
+    const local_date_time& getRentDate() const;
+    const local_date_time& getEndDate() const;
+    const uuid& getID() const;
+    const string& getRegistrationNumber() const;
+    bool operator== (const Rent&) const;
+};
+
+typedef shared_ptr<Rent> RentPtr;
+
+struct FindByID
+{
+    uuid ID;
+    explicit FindByID(const uuid&);
+    bool operator()(const RentPtr&) const;
 };
 
 

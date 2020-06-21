@@ -62,7 +62,7 @@ BOOST_AUTO_TEST_SUITE(TestSuiteCorrect)
     {
         VehicleManager m;
         VehiclePtr vehicle = make_shared<Bicycle>(110, "AB321");
-        VehiclePtr vehicle2 = make_shared<Bicycle>(110, "AB321");
+        VehiclePtr vehicle2 = make_shared<Bicycle>(110, "AB421");
         m.addVehicle(vehicle);
         BOOST_REQUIRE_EQUAL(m.getNumberOfCurrentVehicles(), 1);
         BOOST_REQUIRE_THROW( m.removeVehicle(vehicle2), logic_error);

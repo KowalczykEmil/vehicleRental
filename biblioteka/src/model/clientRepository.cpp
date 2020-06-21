@@ -10,12 +10,12 @@
 
 using namespace std;
 
-void ClientRepository::addClient(ClientPtr client)
+void ClientRepository::create(const ClientPtr &client)
 {
     if (client == nullptr) throw ClientRepositoryException(ClientRepositoryException::exceptionClientNullPtr);
     for(const auto &c : allClients)
     {
-        if(client -> getPersonalID() == c -> getPersonalID())
+        if(*client == *c)
         {
             throw ClientRepositoryException(ClientRepositoryException::exceptionClientExist);
         }
@@ -23,21 +23,21 @@ void ClientRepository::addClient(ClientPtr client)
     allClients.push_back(client);
 }
 
-void ClientRepository::removeClient(ClientPtr client)
+void ClientRepository::remove(const ClientPtr &client)
 {
     if (client == nullptr) throw ClientRepositoryException(ClientRepositoryException::exceptionClientNullPtr);
-    bool found = (find(allClients.begin(), allClients.end(), client) != allClients.end());
-    if (!found) throw ClientRepositoryException(ClientRepositoryException::exceptionClientNotExist);
+    if (find_if(allClients.begin(), allClients.end(), FindByPersonalID((*client).getPersonalID())) == allClients.end())
+        throw ClientRepositoryException(ClientRepositoryException::exceptionClientNotExist);
     allClients.remove(client);
 }
 
-void ClientRepository::removeClient(unsigned int i)
+void ClientRepository::remove(const unsigned int &index)
 {
     unsigned int counter = 1;
-    if (i > allClients.size()) throw ClientRepositoryException(ClientRepositoryException::exceptionClientNotExist);
+    if (index > allClients.size()) throw ClientRepositoryException(ClientRepositoryException::exceptionClientNotExist);
     for (auto& client : allClients)
     {
-        if(counter == i)
+        if(counter == index)
         {
             allClients.remove(client);
             break;
@@ -45,22 +45,22 @@ void ClientRepository::removeClient(unsigned int i)
     }
 }
 
-void ClientRepository::changeType(ClientPtr clientToChange, ClientTypePtr newType)
+void ClientRepository::changeType(const ClientPtr &clientToChange, const ClientTypePtr &newType)
 {
     if (clientToChange == nullptr) throw ClientRepositoryException(ClientRepositoryException::exceptionClientNullPtr);
     (*clientToChange).setClientType(newType);
 }
 
-string ClientRepository::clientRepositoryInfo()
+string ClientRepository::getAll() const
 {
     ostringstream chain;
     unsigned int i = 1;
     for (const auto& client : allClients)
     {
         chain << i << ". " << client->getFullName();
-        if (client->clientType != nullptr)
+        if (client->getClientType() != nullptr)
         {
-            chain << " [" << client->clientType->getType() << "]" << endl;
+            chain << " [" << client->getClientType()->getType() << "]" << endl;
         }
         else
         {
@@ -71,8 +71,24 @@ string ClientRepository::clientRepositoryInfo()
     return chain.str();
 }
 
-unsigned int ClientRepository::getNumberOfClients()
+const list<ClientPtr>& ClientRepository::getRepository() const
 {
-    return allClients.size();
+    return allClients;
+}
+
+const ClientPtr& ClientRepository::search(const unsigned int& index) const
+{
+    if (index > allClients.size()) throw ClientRepositoryException(ClientRepositoryException::exceptionClientNotExist);
+    unsigned int i = 1;
+    string chain;
+    for(const auto& c : allClients)
+    {
+        if(i == index)
+        {
+            return c;
+        }
+        i ++;
+    }
+    throw ClientRepositoryException(ClientRepositoryException::exceptionClientNotExist);
 }
 
