@@ -1,4 +1,4 @@
-# Vehicle-Rental
+# vehicleRental
 Vehicle rental management application. Written in C++. 
 The application can only be used from the console.
 
